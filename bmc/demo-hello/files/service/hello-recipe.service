@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Hello Recipe Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hello
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

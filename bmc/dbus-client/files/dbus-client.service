@@ -1,0 +1,14 @@
+[Unit]
+Description=dbus-client Service
+After=network.target
+After=dbus-server.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+ExecStart=/usr/bin/dbus-client
+SyslogIdentifier=dbus-client
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target

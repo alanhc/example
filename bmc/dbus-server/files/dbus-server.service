@@ -1,0 +1,15 @@
+[Unit]
+Description=dbus-server Service
+After=network.target
+
+[Service]
+Restart=always
+RestartSec=5
+RemainAfterExit=no
+ExecStart=/usr/bin/dbus-server
+SyslogIdentifier=dbus-server
+StandardOutput=journal+console
+StandardError=journal+console
+
+[Install]
+WantedBy=multi-user.target

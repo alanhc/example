@@ -1,0 +1,12 @@
+
+[Unit]
+Description=dbus-server Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/dbus-server
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
