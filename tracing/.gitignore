@@ -1,0 +1,4 @@
+*.out
+nofuncgraph*
+trace.dat
+*.data

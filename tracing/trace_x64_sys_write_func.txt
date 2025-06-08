@@ -1,0 +1,288 @@
+cpus=28
+     hello.1.out-987955 [002] 692374.082224: funcgraph_entry:        2.736 us   |  mutex_unlock();
+     hello.1.out-987955 [002] 692374.082229: sys_exit_write:       0x1
+     hello.1.out-987955 [002] 692374.082231: sys_enter_execve:     filename: 0x7ffe772a4440, argv: 0x7ffe772a5940, envp: 0x7ffe772a5950
+     hello.1.out-987955 [002] 692374.084027: sys_exit_execve:      0x0
+     hello.1.out-987955 [002] 692374.084123: sys_enter_brk:        brk: 0x00000000
+     hello.1.out-987955 [002] 692374.084125: sys_exit_brk:         0x56fa292a4000
+     hello.1.out-987955 [002] 692374.084288: sys_enter_mmap:       addr: 0x00000000, len: 0x00002000, prot: 0x00000003, flags: 0x00000022, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-987955 [002] 692374.084301: sys_exit_mmap:        0x783dee36a000
+     hello.1.out-987955 [002] 692374.084319: sys_enter_access:     filename: 0x783dee3a15b0, mode: 0x00000004
+     hello.1.out-987955 [002] 692374.084329: sys_exit_access:      0xfffffffffffffffe
+     hello.1.out-987955 [002] 692374.084346: sys_enter_openat:     dfd: 0xffffff9c, filename: 0x783dee3a038f, flags: 0x00080000, mode: 0x00000000
+     hello.1.out-987955 [002] 692374.084367: sys_exit_openat:      0x3
+     hello.1.out-987955 [002] 692374.084368: sys_enter_newfstat:   fd: 0x00000003, statbuf: 0x7ffccdb57f40
+     hello.1.out-987955 [002] 692374.084374: sys_exit_newfstat:    0x0
+     hello.1.out-987955 [002] 692374.084375: sys_enter_mmap:       addr: 0x00000000, len: 0x00011d07, prot: 0x00000001, flags: 0x00000002, fd: 0x00000003, off: 0x00000000
+     hello.1.out-987955 [002] 692374.084397: sys_exit_mmap:        0x783dee358000
+     hello.1.out-987955 [002] 692374.084398: sys_enter_close:      fd: 0x00000003
+     hello.1.out-987955 [002] 692374.084401: sys_exit_close:       0x0
+     hello.1.out-987955 [002] 692374.084437: sys_enter_openat:     dfd: 0xffffff9c, filename: 0x783dee36a140, flags: 0x00080000, mode: 0x00000000
+     hello.1.out-987955 [002] 692374.084458: sys_exit_openat:      0x3
+     hello.1.out-987955 [002] 692374.084459: sys_enter_read:       fd: 0x00000003, buf: 0x7ffccdb58178, count: 0x00000340
+     hello.1.out-987955 [002] 692374.084466: sys_exit_read:        0x340
+     hello.1.out-987955 [002] 692374.084467: sys_enter_pread64:    fd: 0x00000003, buf: 0x7ffccdb57d90, count: 0x00000310, pos: 0x00000040
+     hello.1.out-987955 [002] 692374.084472: sys_exit_pread64:     0x310
+     hello.1.out-987955 [002] 692374.084473: sys_enter_newfstat:   fd: 0x00000003, statbuf: 0x7ffccdb58010
+     hello.1.out-987955 [002] 692374.084477: sys_exit_newfstat:    0x0
+     hello.1.out-987955 [002] 692374.084479: sys_enter_pread64:    fd: 0x00000003, buf: 0x7ffccdb57c60, count: 0x00000310, pos: 0x00000040
+     hello.1.out-987955 [002] 692374.084484: sys_exit_pread64:     0x310
+     hello.1.out-987955 [002] 692374.084486: sys_enter_mmap:       addr: 0x00000000, len: 0x00211d90, prot: 0x00000001, flags: 0x00000802, fd: 0x00000003, off: 0x00000000
+     hello.1.out-987955 [002] 692374.084504: sys_exit_mmap:        0x783dee000000
+     hello.1.out-987955 [002] 692374.084505: sys_enter_mmap:       addr: 0x783dee028000, len: 0x00188000, prot: 0x00000005, flags: 0x00000812, fd: 0x00000003, off: 0x00028000
+     hello.1.out-987955 [002] 692374.084554: sys_exit_mmap:        0x783dee028000
+     hello.1.out-987955 [002] 692374.084555: sys_enter_mmap:       addr: 0x783dee1b0000, len: 0x0004f000, prot: 0x00000001, flags: 0x00000812, fd: 0x00000003, off: 0x001b0000
+     hello.1.out-987955 [002] 692374.084581: sys_exit_mmap:        0x783dee1b0000
+     hello.1.out-987955 [002] 692374.084582: sys_enter_mmap:       addr: 0x783dee1ff000, len: 0x00006000, prot: 0x00000003, flags: 0x00000812, fd: 0x00000003, off: 0x001fe000
+     hello.1.out-987955 [002] 692374.084618: sys_exit_mmap:        0x783dee1ff000
+     hello.1.out-987955 [002] 692374.084638: sys_enter_mmap:       addr: 0x783dee205000, len: 0x0000cd90, prot: 0x00000003, flags: 0x00000032, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-987955 [002] 692374.084660: sys_exit_mmap:        0x783dee205000
+     hello.1.out-987955 [002] 692374.084713: sys_enter_close:      fd: 0x00000003
+     hello.1.out-987955 [002] 692374.084715: sys_exit_close:       0x0
+     hello.1.out-987955 [002] 692374.084739: sys_enter_mmap:       addr: 0x00000000, len: 0x00003000, prot: 0x00000003, flags: 0x00000022, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-987955 [002] 692374.084751: sys_exit_mmap:        0x783dee355000
+     hello.1.out-987955 [002] 692374.084779: sys_enter_arch_prctl: option: 0x00001002, arg2: 0x783dee355740
+     hello.1.out-987955 [002] 692374.084781: sys_exit_arch_prctl:  0x0
+     hello.1.out-987955 [002] 692374.084782: sys_enter_set_tid_address: tidptr: 0x783dee355a10
+     hello.1.out-987955 [002] 692374.084785: sys_exit_set_tid_address: 0xf1333
+     hello.1.out-987955 [002] 692374.084786: sys_enter_set_robust_list: head: 0x783dee355a20, len: 0x00000018
+     hello.1.out-987955 [002] 692374.084787: sys_exit_set_robust_list: 0x0
+     hello.1.out-987955 [002] 692374.084788: sys_enter_rseq:       rseq: 0x783dee356060, rseq_len: 0x00000020, flags: 0x00000000, sig: 0x53053053
+     hello.1.out-987955 [002] 692374.084790: sys_exit_rseq:        0x0
+     hello.1.out-987955 [002] 692374.085039: sys_enter_mprotect:   start: 0x783dee1ff000, len: 0x00004000, prot: 0x00000001
+     hello.1.out-987955 [002] 692374.085072: sys_exit_mprotect:    0x0
+     hello.1.out-987955 [002] 692374.085079: sys_enter_mprotect:   start: 0x56fa1845c000, len: 0x00001000, prot: 0x00000001
+     hello.1.out-987955 [002] 692374.085098: sys_exit_mprotect:    0x0
+     hello.1.out-987955 [002] 692374.085107: sys_enter_mprotect:   start: 0x783dee3a8000, len: 0x00002000, prot: 0x00000001
+     hello.1.out-987955 [002] 692374.085126: sys_exit_mprotect:    0x0
+     hello.1.out-987955 [002] 692374.085202: sys_enter_prlimit64:  pid: 0x00000000, resource: 0x00000003, new_rlim: 0x00000000, old_rlim: 0x7ffccdb58b60
+     hello.1.out-987955 [002] 692374.085205: sys_exit_prlimit64:   0x0
+     hello.1.out-987955 [002] 692374.085257: sys_enter_munmap:     addr: 0x783dee358000, len: 0x00011d07
+     hello.1.out-987955 [002] 692374.085316: sys_exit_munmap:      0x0
+     hello.1.out-987955 [002] 692374.085453: sys_enter_newfstat:   fd: 0x00000001, statbuf: 0x7ffccdb58a70
+     hello.1.out-987955 [002] 692374.085458: sys_exit_newfstat:    0x0
+     hello.1.out-987955 [002] 692374.085476: sys_enter_getrandom:  ubuf: 0x783dee20a178, len: 0x00000008, flags: 0x00000001
+     hello.1.out-987955 [002] 692374.085480: sys_exit_getrandom:   0x8
+     hello.1.out-987955 [002] 692374.085483: sys_enter_brk:        brk: 0x00000000
+     hello.1.out-987955 [002] 692374.085485: sys_exit_brk:         0x56fa292a4000
+     hello.1.out-987955 [002] 692374.085486: sys_enter_brk:        brk: 0x56fa292c5000
+     hello.1.out-987955 [002] 692374.085496: sys_exit_brk:         0x56fa292c5000
+     hello.1.out-987955 [002] 692374.085519: sys_enter_write:      fd: 0x00000001, buf: 0x56fa292a42a0, count: 0x0000001c
+     hello.1.out-987955 [002] 692374.085520: funcgraph_entry:                   |  __x64_sys_write() {
+     hello.1.out-987955 [002] 692374.085520: funcgraph_entry:                   |    ksys_write() {
+     hello.1.out-987955 [002] 692374.085521: funcgraph_entry:        0.580 us   |      __fdget_pos();
+     hello.1.out-987955 [002] 692374.085522: funcgraph_entry:                   |      vfs_write() {
+     hello.1.out-987955 [002] 692374.085523: funcgraph_entry:                   |        rw_verify_area() {
+     hello.1.out-987955 [002] 692374.085523: funcgraph_entry:                   |          security_file_permission() {
+     hello.1.out-987955 [002] 692374.085523: funcgraph_entry:                   |            apparmor_file_permission() {
+     hello.1.out-987955 [002] 692374.085524: funcgraph_entry:                   |              aa_file_perm() {
+     hello.1.out-987955 [002] 692374.085524: funcgraph_entry:        0.340 us   |                __rcu_read_lock();
+     hello.1.out-987955 [002] 692374.085525: funcgraph_entry:        0.558 us   |                __rcu_read_unlock();
+     hello.1.out-987955 [002] 692374.085526: funcgraph_exit:         1.983 us   |              }
+     hello.1.out-987955 [002] 692374.085526: funcgraph_exit:         2.703 us   |            }
+     hello.1.out-987955 [002] 692374.085526: funcgraph_exit:         3.473 us   |          }
+     hello.1.out-987955 [002] 692374.085527: funcgraph_exit:         4.237 us   |        }
+     hello.1.out-987955 [002] 692374.085528: funcgraph_entry:                   |        tty_write() {
+     hello.1.out-987955 [002] 692374.085528: funcgraph_entry:                   |          file_tty_write.isra.0() {
+     hello.1.out-987955 [002] 692374.085529: funcgraph_entry:                   |            tty_ldisc_ref_wait() {
+     hello.1.out-987955 [002] 692374.085530: funcgraph_entry:                   |              ldsem_down_read() {
+     hello.1.out-987955 [002] 692374.085530: funcgraph_entry:        0.359 us   |                __cond_resched();
+     hello.1.out-987955 [002] 692374.085531: funcgraph_exit:         1.088 us   |              }
+     hello.1.out-987955 [002] 692374.085531: funcgraph_exit:         2.565 us   |            }
+     hello.1.out-987955 [002] 692374.085532: funcgraph_entry:                   |            iterate_tty_write() {
+     hello.1.out-987955 [002] 692374.085532: funcgraph_entry:        0.402 us   |              mutex_trylock();
+     hello.1.out-987955 [002] 692374.085533: funcgraph_entry:                   |              __check_object_size() {
+     hello.1.out-987955 [002] 692374.085533: funcgraph_entry:                   |                __check_object_size.part.0() {
+     hello.1.out-987955 [002] 692374.085534: funcgraph_entry:        0.373 us   |                  check_stack_object();
+     hello.1.out-987955 [002] 692374.085534: funcgraph_entry:        0.357 us   |                  is_vmalloc_addr();
+     hello.1.out-987955 [002] 692374.085535: funcgraph_entry:        0.361 us   |                  __virt_addr_valid();
+     hello.1.out-987955 [002] 692374.085536: funcgraph_entry:        0.497 us   |                  __check_heap_object();
+     hello.1.out-987955 [002] 692374.085537: funcgraph_exit:         3.630 us   |                }
+     hello.1.out-987955 [002] 692374.085537: funcgraph_exit:         4.320 us   |              }
+     hello.1.out-987955 [002] 692374.085538: funcgraph_entry:                   |              n_tty_write() {
+     hello.1.out-987955 [002] 692374.085540: funcgraph_entry:                   |                down_read() {
+     hello.1.out-987955 [002] 692374.085543: funcgraph_entry:        0.529 us   |                  irq_enter_rcu();
+     hello.1.out-987955 [002] 692374.085544: funcgraph_entry:                   |                  __sysvec_irq_work() {
+     hello.1.out-987955 [002] 692374.085544: funcgraph_entry:                   |                    __wake_up() {
+     hello.1.out-987955 [002] 692374.085545: funcgraph_entry:        0.443 us   |                      _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085545: funcgraph_entry:        0.375 us   |                      __wake_up_common();
+     hello.1.out-987955 [002] 692374.085546: funcgraph_entry:        0.356 us   |                      _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085547: funcgraph_exit:         2.564 us   |                    }
+     hello.1.out-987955 [002] 692374.085547: funcgraph_entry:        0.371 us   |                    _raw_spin_lock();
+     hello.1.out-987955 [002] 692374.085548: funcgraph_entry:        0.329 us   |                    _raw_spin_unlock();
+     hello.1.out-987955 [002] 692374.085549: funcgraph_entry:                   |                    __wake_up() {
+     hello.1.out-987955 [002] 692374.085549: funcgraph_entry:        0.364 us   |                      _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085550: funcgraph_entry:                   |                      __wake_up_common() {
+     hello.1.out-987955 [002] 692374.085550: funcgraph_entry:                   |                        pollwake() {
+     hello.1.out-987955 [002] 692374.085551: funcgraph_entry:                   |                          default_wake_function() {
+     hello.1.out-987955 [002] 692374.085551: funcgraph_entry:                   |                            try_to_wake_up() {
+     hello.1.out-987955 [002] 692374.085551: funcgraph_entry:        0.577 us   |                              _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085552: funcgraph_entry:                   |                              __traceiter_sched_waking() {
+     hello.1.out-987955 [002] 692374.085553: funcgraph_entry:        0.575 us   |                                _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085554: funcgraph_entry:        0.338 us   |                                _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085555: funcgraph_exit:         2.403 us   |                              }
+     hello.1.out-987955 [002] 692374.085556: funcgraph_entry:                   |                              select_task_rq_fair() {
+     hello.1.out-987955 [002] 692374.085556: funcgraph_entry:        0.327 us   |                                __rcu_read_lock();
+     hello.1.out-987955 [002] 692374.085557: funcgraph_entry:                   |                                wake_affine() {
+     hello.1.out-987955 [002] 692374.085557: funcgraph_entry:        0.575 us   |                                  available_idle_cpu();
+     hello.1.out-987955 [002] 692374.085558: funcgraph_entry:        0.721 us   |                                  available_idle_cpu();
+     hello.1.out-987955 [002] 692374.085559: funcgraph_exit:         2.404 us   |                                }
+     hello.1.out-987955 [002] 692374.085560: funcgraph_entry:                   |                                select_idle_sibling() {
+     hello.1.out-987955 [002] 692374.085560: funcgraph_entry:        0.340 us   |                                  available_idle_cpu();
+     hello.1.out-987955 [002] 692374.085561: funcgraph_exit:         1.001 us   |                                }
+     hello.1.out-987955 [002] 692374.085561: funcgraph_entry:        0.322 us   |                                __rcu_read_unlock();
+     hello.1.out-987955 [002] 692374.085562: funcgraph_exit:         6.410 us   |                              }
+     hello.1.out-987955 [002] 692374.085562: funcgraph_entry:                   |                              ttwu_queue_wakelist() {
+     hello.1.out-987955 [002] 692374.085563: funcgraph_entry:                   |                                __smp_call_single_queue() {
+     hello.1.out-987955 [002] 692374.085564: funcgraph_entry:        0.578 us   |                                  call_function_single_prep_ipi();
+     hello.1.out-987955 [002] 692374.085564: funcgraph_exit:         1.543 us   |                                }
+     hello.1.out-987955 [002] 692374.085565: funcgraph_exit:         2.384 us   |                              }
+     hello.1.out-987955 [002] 692374.085565: funcgraph_entry:        0.326 us   |                              _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085566: funcgraph_exit:       + 14.780 us  |                            }
+     hello.1.out-987955 [002] 692374.085566: funcgraph_exit:       + 15.457 us  |                          }
+     hello.1.out-987955 [002] 692374.085567: funcgraph_exit:       + 16.225 us  |                        }
+     hello.1.out-987955 [002] 692374.085567: funcgraph_exit:       + 17.300 us  |                      }
+     hello.1.out-987955 [002] 692374.085567: funcgraph_entry:        0.325 us   |                      _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085568: funcgraph_exit:       + 19.297 us  |                    }
+     hello.1.out-987955 [002] 692374.085569: funcgraph_exit:       + 24.954 us  |                  }
+     hello.1.out-987955 [002] 692374.085569: funcgraph_entry:                   |                  irq_exit_rcu() {
+     hello.1.out-987955 [002] 692374.085569: funcgraph_entry:        0.332 us   |                    sched_core_idle_cpu();
+     hello.1.out-987955 [002] 692374.085570: funcgraph_exit:         1.122 us   |                  }
+     hello.1.out-987955 [002] 692374.085571: funcgraph_entry:        0.339 us   |                  __cond_resched();
+     hello.1.out-987955 [002] 692374.085572: funcgraph_exit:       + 33.011 us  |                }
+     hello.1.out-987955 [002] 692374.085572: funcgraph_entry:        0.774 us   |                process_echoes();
+     hello.1.out-987955 [002] 692374.085573: funcgraph_entry:                   |                add_wait_queue() {
+     hello.1.out-987955 [002] 692374.085574: funcgraph_entry:        0.408 us   |                  _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085575: funcgraph_entry:        0.446 us   |                  _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085575: funcgraph_exit:         1.909 us   |                }
+     hello.1.out-987955 [002] 692374.085576: funcgraph_entry:        0.335 us   |                tty_hung_up_p();
+     hello.1.out-987955 [002] 692374.085577: funcgraph_entry:                   |                process_output_block() {
+     hello.1.out-987955 [002] 692374.085577: funcgraph_entry:                   |                  mutex_lock() {
+     hello.1.out-987955 [002] 692374.085577: funcgraph_entry:        0.345 us   |                    __cond_resched();
+     hello.1.out-987955 [002] 692374.085578: funcgraph_exit:         1.066 us   |                  }
+     hello.1.out-987955 [002] 692374.085578: funcgraph_entry:                   |                  tty_write_room() {
+     hello.1.out-987955 [002] 692374.085579: funcgraph_entry:                   |                    pty_write_room() {
+     hello.1.out-987955 [002] 692374.085579: funcgraph_entry:        0.526 us   |                      tty_buffer_space_avail();
+     hello.1.out-987955 [002] 692374.085580: funcgraph_exit:         1.273 us   |                    }
+     hello.1.out-987955 [002] 692374.085580: funcgraph_exit:         2.087 us   |                  }
+     hello.1.out-987955 [002] 692374.085581: funcgraph_entry:                   |                  pty_write() {
+     hello.1.out-987955 [002] 692374.085582: funcgraph_entry:                   |                    tty_insert_flip_string_and_push_buffer() {
+     hello.1.out-987955 [002] 692374.085582: funcgraph_entry:        0.558 us   |                      _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085583: funcgraph_entry:                   |                      __tty_insert_flip_string_flags() {
+     hello.1.out-987955 [002] 692374.085583: funcgraph_entry:        0.643 us   |                        __tty_buffer_request_room();
+     hello.1.out-987955 [002] 692374.085584: funcgraph_exit:         1.391 us   |                      }
+     hello.1.out-987955 [002] 692374.085585: funcgraph_entry:        0.333 us   |                      _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085585: funcgraph_entry:                   |                      queue_work_on() {
+     hello.1.out-987955 [002] 692374.085586: funcgraph_entry:        0.410 us   |                        clear_pending_if_disabled();
+     hello.1.out-987955 [002] 692374.085587: funcgraph_entry:                   |                        __queue_work() {
+     hello.1.out-987955 [002] 692374.085587: funcgraph_entry:        0.478 us   |                          __rcu_read_lock();
+     hello.1.out-987955 [002] 692374.085588: funcgraph_entry:                   |                          __queue_work.part.0() {
+     hello.1.out-987955 [002] 692374.085589: funcgraph_entry:        0.620 us   |                            wq_select_unbound_cpu();
+     hello.1.out-987955 [002] 692374.085590: funcgraph_entry:        0.495 us   |                            _raw_spin_lock();
+     hello.1.out-987955 [002] 692374.085591: funcgraph_entry:        0.617 us   |                            pwq_tryinc_nr_active();
+     hello.1.out-987955 [002] 692374.085592: funcgraph_entry:        0.327 us   |                            insert_work();
+     hello.1.out-987955 [002] 692374.085593: funcgraph_entry:                   |                            kick_pool() {
+     hello.1.out-987955 [002] 692374.085594: funcgraph_entry:                   |                              wake_up_process() {
+     hello.1.out-987955 [002] 692374.085594: funcgraph_entry:                   |                                try_to_wake_up() {
+     hello.1.out-987955 [002] 692374.085594: funcgraph_entry:        0.487 us   |                                  _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085595: funcgraph_entry:                   |                                  __traceiter_sched_waking() {
+     hello.1.out-987955 [002] 692374.085596: funcgraph_entry:        0.569 us   |                                    _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085597: funcgraph_entry:        0.315 us   |                                    _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085597: funcgraph_exit:         1.953 us   |                                  }
+     hello.1.out-987955 [002] 692374.085598: funcgraph_entry:                   |                                  select_task_rq_fair() {
+     hello.1.out-987955 [002] 692374.085598: funcgraph_entry:        0.410 us   |                                    __rcu_read_lock();
+     hello.1.out-987955 [002] 692374.085599: funcgraph_entry:                   |                                    wake_affine() {
+     hello.1.out-987955 [002] 692374.085599: funcgraph_entry:        0.321 us   |                                      available_idle_cpu();
+     hello.1.out-987955 [002] 692374.085600: funcgraph_entry:        0.672 us   |                                      available_idle_cpu();
+     hello.1.out-987955 [002] 692374.085601: funcgraph_entry:        0.926 us   |                                      task_h_load();
+     hello.1.out-987955 [002] 692374.085602: funcgraph_exit:         3.534 us   |                                    }
+     hello.1.out-987955 [002] 692374.085603: funcgraph_entry:                   |                                    select_idle_sibling() {
+     hello.1.out-987955 [002] 692374.085603: funcgraph_entry:        0.359 us   |                                      available_idle_cpu();
+     hello.1.out-987955 [002] 692374.085604: funcgraph_entry:        0.332 us   |                                      cpus_share_cache();
+     hello.1.out-987955 [002] 692374.085604: funcgraph_entry:        0.470 us   |                                      available_idle_cpu();
+     hello.1.out-987955 [002] 692374.085605: funcgraph_entry:        0.500 us   |                                      cpus_share_cache();
+     hello.1.out-987955 [002] 692374.085606: funcgraph_entry:        0.621 us   |                                      available_idle_cpu();
+     hello.1.out-987955 [002] 692374.085607: funcgraph_entry:        0.320 us   |                                      cpus_share_resources();
+     hello.1.out-987955 [002] 692374.085608: funcgraph_exit:         5.411 us   |                                    }
+     hello.1.out-987955 [002] 692374.085608: funcgraph_entry:        0.333 us   |                                    __rcu_read_unlock();
+     hello.1.out-987955 [002] 692374.085609: funcgraph_exit:       + 11.499 us  |                                  }
+     hello.1.out-987955 [002] 692374.085609: funcgraph_entry:        0.533 us   |                                  kthread_is_per_cpu();
+     hello.1.out-987955 [002] 692374.085611: funcgraph_entry:                   |                                  set_task_cpu() {
+     hello.1.out-987955 [002] 692374.085611: funcgraph_entry:                   |                                    migrate_task_rq_fair() {
+     hello.1.out-987955 [002] 692374.085612: funcgraph_entry:                   |                                      remove_entity_load_avg() {
+     hello.1.out-987955 [002] 692374.085612: funcgraph_entry:        0.566 us   |                                        __update_load_avg_blocked_se();
+     hello.1.out-987955 [002] 692374.085613: funcgraph_entry:        0.368 us   |                                        _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085613: funcgraph_entry:        0.327 us   |                                        _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085614: funcgraph_exit:         2.628 us   |                                      }
+     hello.1.out-987955 [002] 692374.085615: funcgraph_entry:        0.842 us   |                                      __rcu_read_lock();
+     hello.1.out-987955 [002] 692374.085617: funcgraph_entry:        0.754 us   |                                      __rcu_read_unlock();
+     hello.1.out-987955 [002] 692374.085618: funcgraph_exit:         7.416 us   |                                    }
+     hello.1.out-987955 [002] 692374.085619: funcgraph_entry:        0.403 us   |                                    set_task_rq_fair();
+     hello.1.out-987955 [002] 692374.085620: funcgraph_exit:         9.130 us   |                                  }
+     hello.1.out-987955 [002] 692374.085620: funcgraph_entry:                   |                                  ttwu_queue_wakelist() {
+     hello.1.out-987955 [002] 692374.085621: funcgraph_entry:                   |                                    __smp_call_single_queue() {
+     hello.1.out-987955 [002] 692374.085621: funcgraph_entry:        0.602 us   |                                      call_function_single_prep_ipi();
+     hello.1.out-987955 [002] 692374.085622: funcgraph_exit:         1.545 us   |                                    }
+     hello.1.out-987955 [002] 692374.085622: funcgraph_exit:         2.250 us   |                                  }
+     hello.1.out-987955 [002] 692374.085623: funcgraph_entry:        0.360 us   |                                  _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085623: funcgraph_exit:       + 29.181 us  |                                }
+     hello.1.out-987955 [002] 692374.085624: funcgraph_exit:       + 30.213 us  |                              }
+     hello.1.out-987955 [002] 692374.085624: funcgraph_exit:       + 30.994 us  |                            }
+     hello.1.out-987955 [002] 692374.085624: funcgraph_entry:        0.335 us   |                            _raw_spin_unlock();
+     hello.1.out-987955 [002] 692374.085625: funcgraph_entry:        0.350 us   |                            __rcu_read_unlock();
+     hello.1.out-987955 [002] 692374.085626: funcgraph_exit:       + 37.737 us  |                          }
+     hello.1.out-987955 [002] 692374.085626: funcgraph_exit:       + 39.346 us  |                        }
+     hello.1.out-987955 [002] 692374.085627: funcgraph_exit:       + 41.085 us  |                      }
+     hello.1.out-987955 [002] 692374.085627: funcgraph_exit:       + 45.085 us  |                    }
+     hello.1.out-987955 [002] 692374.085627: funcgraph_exit:       + 45.980 us  |                  }
+     hello.1.out-987955 [002] 692374.085628: funcgraph_entry:        0.361 us   |                  mutex_unlock();
+     hello.1.out-987955 [002] 692374.085628: funcgraph_exit:       + 51.820 us  |                }
+     hello.1.out-987955 [002] 692374.085629: funcgraph_entry:                   |                mutex_lock() {
+     hello.1.out-987955 [002] 692374.085629: funcgraph_entry:        0.360 us   |                  __cond_resched();
+     hello.1.out-987955 [002] 692374.085630: funcgraph_exit:         1.079 us   |                }
+     hello.1.out-987955 [002] 692374.085630: funcgraph_entry:                   |                tty_write_room() {
+     hello.1.out-987955 [002] 692374.085631: funcgraph_entry:                   |                  pty_write_room() {
+     hello.1.out-987955 [002] 692374.085631: funcgraph_entry:        0.338 us   |                    tty_buffer_space_avail();
+     hello.1.out-987955 [002] 692374.085632: funcgraph_exit:         0.996 us   |                  }
+     hello.1.out-987955 [002] 692374.085632: funcgraph_exit:         1.708 us   |                }
+     hello.1.out-987955 [002] 692374.085632: funcgraph_entry:                   |                do_output_char() {
+     hello.1.out-987955 [002] 692374.085633: funcgraph_entry:                   |                  pty_write() {
+     hello.1.out-987955 [002] 692374.085633: funcgraph_entry:                   |                    tty_insert_flip_string_and_push_buffer() {
+     hello.1.out-987955 [002] 692374.085633: funcgraph_entry:        0.381 us   |                      _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085634: funcgraph_entry:                   |                      __tty_insert_flip_string_flags() {
+     hello.1.out-987955 [002] 692374.085634: funcgraph_entry:        0.330 us   |                        __tty_buffer_request_room();
+     hello.1.out-987955 [002] 692374.085636: funcgraph_exit:         1.823 us   |                      }
+     hello.1.out-987955 [002] 692374.085636: funcgraph_entry:        0.346 us   |                      _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085637: funcgraph_entry:        0.413 us   |                      queue_work_on();
+     hello.1.out-987955 [002] 692374.085638: funcgraph_exit:         4.750 us   |                    }
+     hello.1.out-987955 [002] 692374.085638: funcgraph_exit:         5.400 us   |                  }
+     hello.1.out-987955 [002] 692374.085639: funcgraph_exit:         6.174 us   |                }
+     hello.1.out-987955 [002] 692374.085639: funcgraph_entry:        0.368 us   |                mutex_unlock();
+     hello.1.out-987955 [002] 692374.085640: funcgraph_entry:                   |                remove_wait_queue() {
+     hello.1.out-987955 [002] 692374.085640: funcgraph_entry:        0.374 us   |                  _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085641: funcgraph_entry:        0.346 us   |                  _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085641: funcgraph_exit:         1.749 us   |                }
+     hello.1.out-987955 [002] 692374.085642: funcgraph_entry:        0.369 us   |                up_read();
+     hello.1.out-987955 [002] 692374.085643: funcgraph_exit:       ! 104.317 us |              }
+     hello.1.out-987955 [002] 692374.085643: funcgraph_entry:                   |              tty_update_time() {
+     hello.1.out-987955 [002] 692374.085644: funcgraph_entry:        0.489 us   |                ktime_get_real_seconds();
+     hello.1.out-987955 [002] 692374.085645: funcgraph_entry:        0.373 us   |                _raw_spin_lock();
+     hello.1.out-987955 [002] 692374.085645: funcgraph_entry:        0.344 us   |                _raw_spin_unlock();
+     hello.1.out-987955 [002] 692374.085646: funcgraph_exit:         2.829 us   |              }
+     hello.1.out-987955 [002] 692374.085646: funcgraph_entry:        0.361 us   |              mutex_unlock();
+     hello.1.out-987955 [002] 692374.085647: funcgraph_entry:                   |              __wake_up() {
+     hello.1.out-987955 [002] 692374.085647: funcgraph_entry:        0.384 us   |                _raw_spin_lock_irqsave();
+     hello.1.out-987955 [002] 692374.085648: funcgraph_entry:        0.339 us   |                __wake_up_common();
+     hello.1.out-987955 [002] 692374.085649: funcgraph_entry:        0.341 us   |                _raw_spin_unlock_irqrestore();
+     hello.1.out-987955 [002] 692374.085650: funcgraph_exit:         2.440 us   |              }
+     hello.1.out-987955 [002] 692374.085650: funcgraph_exit:       ! 118.386 us |            }
+     hello.1.out-987955 [002] 692374.085650: funcgraph_entry:                   |            tty_ldisc_deref() {
+     hello.1.out-987955 [002] 692374.085651: funcgraph_entry:        0.377 us   |              ldsem_up_read();
+     hello.1.out-987955 [002] 692374.085652: funcgraph_exit:         1.216 us   |            }
+     hello.1.out-987955 [002] 692374.085652: funcgraph_exit:       ! 123.790 us |          }
+     hello.1.out-987955 [002] 692374.085652: funcgraph_exit:       ! 124.765 us |        }
+     hello.1.out-987955 [002] 692374.085653: funcgraph_exit:       ! 130.742 us |      }
+     hello.1.out-987955 [002] 692374.085653: funcgraph_exit:       ! 132.856 us |    }
+     hello.1.out-987955 [002] 692374.085654: funcgraph_exit:       ! 133.906 us |  }
+     hello.1.out-987955 [002] 692374.085654: sys_exit_write:       0x1c
+     hello.1.out-987955 [002] 692374.085712: sys_enter_exit_group: error_code: 0x00000000

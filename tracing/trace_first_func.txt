@@ -1,0 +1,641 @@
+cpus=28
+     hello.1.out-987225 [008] 692035.904489: funcgraph_entry:        2.859 us   |  mutex_unlock();
+     hello.1.out-987225 [008] 692035.904494: funcgraph_entry:        0.515 us   |  __f_unlock_pos();
+     hello.1.out-987225 [008] 692035.904495: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.904495: sys_exit_write:       0x1
+     hello.1.out-987225 [008] 692035.904496: funcgraph_exit:         1.808 us   |  }
+     hello.1.out-987225 [008] 692035.904497: funcgraph_entry:        0.436 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.904498: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.904499: sys_enter_execve:     filename: 0x7ffe9895e8f0, argv: 0x7ffe9895fdf0, envp: 0x7ffe9895fe00
+     hello.1.out-987225 [008] 692035.904500: funcgraph_exit:         1.180 us   |  }
+     hello.1.out-987225 [008] 692035.904500: funcgraph_entry:                   |  x64_sys_call() {
+          <idle>-0     [018] 692035.904703: funcgraph_entry:        2.712 us   |  _raw_spin_lock_irqsave();
+          <idle>-0     [018] 692035.904706: funcgraph_entry:        0.585 us   |  _raw_spin_unlock_irqrestore();
+          <idle>-0     [018] 692035.904708: funcgraph_entry:        2.618 us   |  switch_mm_irqs_off();
+          <idle>-0     [008] 692035.905108: funcgraph_entry:        1.046 us   |  _raw_spin_lock_irqsave();
+          <idle>-0     [008] 692035.905109: funcgraph_entry:        0.422 us   |  _raw_spin_unlock_irqrestore();
+          <idle>-0     [008] 692035.905110: funcgraph_entry:        0.794 us   |  switch_mm_irqs_off();
+     hello.1.out-987225 [008] 692035.906074: funcgraph_exit:       # 1573.792 us |  }
+     hello.1.out-987225 [008] 692035.906074: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906075: sys_exit_execve:      0x0
+     hello.1.out-987225 [008] 692035.906076: funcgraph_exit:         1.349 us   |  }
+     hello.1.out-987225 [008] 692035.906076: funcgraph_entry:        1.008 us   |  task_work_run();
+     hello.1.out-987225 [008] 692035.906078: funcgraph_entry:        0.346 us   |  mem_cgroup_handle_over_high();
+     hello.1.out-987225 [008] 692035.906078: funcgraph_entry:        0.350 us   |  blkcg_maybe_throttle_current();
+     hello.1.out-987225 [008] 692035.906079: funcgraph_entry:        0.377 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906080: funcgraph_entry:        1.071 us   |  switch_fpu_return();
+     hello.1.out-987225 [008] 692035.906083: funcgraph_entry:        1.120 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906084: funcgraph_entry:      + 13.541 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906098: funcgraph_entry:        0.375 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906099: funcgraph_entry:        0.359 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906100: funcgraph_entry:        0.336 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906100: funcgraph_entry:        0.402 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906103: funcgraph_entry:        0.837 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906104: funcgraph_entry:        9.034 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906113: funcgraph_entry:        0.290 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906114: funcgraph_entry:        0.314 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906115: funcgraph_entry:        0.283 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906115: funcgraph_entry:        0.293 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906117: funcgraph_entry:        0.604 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906118: funcgraph_entry:        7.734 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906126: funcgraph_entry:        0.295 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906127: funcgraph_entry:        0.309 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906127: funcgraph_entry:        0.370 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906128: funcgraph_entry:        0.285 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906131: funcgraph_entry:        0.638 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906132: funcgraph_entry:        3.523 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906135: funcgraph_entry:        0.296 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906136: funcgraph_entry:        0.299 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906136: funcgraph_entry:        0.292 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906137: funcgraph_entry:        0.273 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906139: funcgraph_entry:        0.628 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906140: funcgraph_entry:        8.375 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906149: funcgraph_entry:        0.331 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906149: funcgraph_entry:        0.318 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906150: funcgraph_entry:        0.296 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906150: funcgraph_entry:        0.358 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906153: funcgraph_entry:        0.833 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906155: funcgraph_entry:      + 11.390 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906166: funcgraph_entry:        0.322 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906167: funcgraph_entry:        0.342 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906167: funcgraph_entry:        0.301 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906168: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906170: funcgraph_entry:        0.684 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906171: funcgraph_entry:        7.500 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906190: funcgraph_entry:        0.429 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906191: funcgraph_entry:        0.331 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906192: funcgraph_entry:        0.305 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906192: funcgraph_entry:        0.286 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906198: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906198: sys_enter_brk:        brk: 0x00000000
+     hello.1.out-987225 [008] 692035.906199: funcgraph_exit:         0.968 us   |  }
+     hello.1.out-987225 [008] 692035.906199: funcgraph_entry:        1.254 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906201: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906201: sys_exit_brk:         0x604a45c82000
+     hello.1.out-987225 [008] 692035.906202: funcgraph_exit:         0.844 us   |  }
+     hello.1.out-987225 [008] 692035.906202: funcgraph_entry:        0.362 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906223: funcgraph_entry:        0.773 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906224: funcgraph_entry:        8.854 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906233: funcgraph_entry:        0.286 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906234: funcgraph_entry:        0.307 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906235: funcgraph_entry:        0.327 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906235: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906281: funcgraph_entry:        1.185 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906282: funcgraph_entry:        6.862 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906290: funcgraph_entry:        0.320 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906290: funcgraph_entry:        0.333 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906291: funcgraph_entry:        0.303 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906292: funcgraph_entry:        0.292 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906296: funcgraph_entry:        0.664 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906297: funcgraph_entry:        4.215 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906301: funcgraph_entry:        0.279 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906302: funcgraph_entry:        0.311 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906302: funcgraph_entry:        0.321 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906303: funcgraph_entry:        0.278 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906307: funcgraph_entry:        0.634 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906307: funcgraph_entry:        4.398 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906312: funcgraph_entry:        0.292 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906313: funcgraph_entry:        0.311 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906313: funcgraph_entry:        0.284 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906314: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906317: funcgraph_entry:        0.594 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906318: funcgraph_entry:      + 10.819 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906329: funcgraph_entry:        0.325 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906329: funcgraph_entry:        0.397 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906330: funcgraph_entry:        0.313 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906331: funcgraph_entry:        0.286 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906333: funcgraph_entry:        0.831 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906334: funcgraph_entry:        1.919 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906337: funcgraph_entry:        0.795 us   |  lock_mm_and_find_vma();
+     hello.1.out-987225 [008] 692035.906338: funcgraph_entry:        3.938 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906342: funcgraph_entry:        0.350 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906343: funcgraph_entry:        0.334 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906351: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906351: sys_enter_mmap:       addr: 0x00000000, len: 0x00002000, prot: 0x00000003, flags: 0x00000022, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-987225 [008] 692035.906352: funcgraph_exit:         0.964 us   |  }
+     hello.1.out-987225 [008] 692035.906352: funcgraph_entry:        9.563 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906362: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906362: sys_exit_mmap:        0x784c53613000
+     hello.1.out-987225 [008] 692035.906363: funcgraph_exit:         0.879 us   |  }
+     hello.1.out-987225 [008] 692035.906363: funcgraph_entry:        0.333 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906365: funcgraph_entry:        0.836 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906366: funcgraph_entry:      + 10.575 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906377: funcgraph_entry:        0.310 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906378: funcgraph_entry:        0.822 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906379: funcgraph_entry:        0.368 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906380: funcgraph_entry:        0.271 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906382: funcgraph_entry:        0.872 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906383: funcgraph_entry:      + 10.080 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906394: funcgraph_entry:        0.322 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906394: funcgraph_entry:        0.368 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906395: funcgraph_entry:        0.287 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906396: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906398: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906398: sys_enter_access:     filename: 0x784c5364a5b0, mode: 0x00000004
+     hello.1.out-987225 [008] 692035.906398: funcgraph_exit:         0.773 us   |  }
+     hello.1.out-987225 [008] 692035.906399: funcgraph_entry:        7.326 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906406: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906407: sys_exit_access:      0xfffffffffffffffe
+     hello.1.out-987225 [008] 692035.906407: funcgraph_exit:         0.911 us   |  }
+     hello.1.out-987225 [008] 692035.906408: funcgraph_entry:        0.266 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906411: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906412: sys_enter_openat:     dfd: 0xffffff9c, filename: 0x784c5364938f, flags: 0x00080000, mode: 0x00000000
+     hello.1.out-987225 [008] 692035.906412: funcgraph_exit:         0.696 us   |  }
+     hello.1.out-987225 [008] 692035.906412: funcgraph_entry:      + 14.691 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906427: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906428: sys_exit_openat:      0x3
+     hello.1.out-987225 [008] 692035.906428: funcgraph_exit:         0.685 us   |  }
+     hello.1.out-987225 [008] 692035.906428: funcgraph_entry:        0.294 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906429: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906430: sys_enter_newfstat:   fd: 0x00000003, statbuf: 0x7ffee26080b0
+     hello.1.out-987225 [008] 692035.906430: funcgraph_exit:         0.745 us   |  }
+     hello.1.out-987225 [008] 692035.906430: funcgraph_entry:        4.425 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906435: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906435: sys_exit_newfstat:    0x0
+     hello.1.out-987225 [008] 692035.906436: funcgraph_exit:         0.836 us   |  }
+     hello.1.out-987225 [008] 692035.906436: funcgraph_entry:        0.350 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906437: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906437: sys_enter_mmap:       addr: 0x00000000, len: 0x00011d07, prot: 0x00000001, flags: 0x00000002, fd: 0x00000003, off: 0x00000000
+     hello.1.out-987225 [008] 692035.906438: funcgraph_exit:         0.608 us   |  }
+     hello.1.out-987225 [008] 692035.906438: funcgraph_entry:      + 17.100 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906455: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906456: sys_exit_mmap:        0x784c53601000
+     hello.1.out-987225 [008] 692035.906456: funcgraph_exit:         0.867 us   |  }
+     hello.1.out-987225 [008] 692035.906457: funcgraph_entry:        0.322 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906458: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906458: sys_enter_close:      fd: 0x00000003
+     hello.1.out-987225 [008] 692035.906458: funcgraph_exit:         0.783 us   |  }
+     hello.1.out-987225 [008] 692035.906459: funcgraph_entry:        1.651 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906461: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906461: sys_exit_close:       0x0
+     hello.1.out-987225 [008] 692035.906461: funcgraph_exit:         0.685 us   |  }
+     hello.1.out-987225 [008] 692035.906462: funcgraph_entry:        0.283 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906463: funcgraph_entry:        0.739 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906464: funcgraph_entry:      + 23.386 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906488: funcgraph_entry:        0.289 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906489: funcgraph_entry:        0.380 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906489: funcgraph_entry:        0.286 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906490: funcgraph_entry:        0.335 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906494: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906495: sys_enter_openat:     dfd: 0xffffff9c, filename: 0x784c53613140, flags: 0x00080000, mode: 0x00000000
+     hello.1.out-987225 [008] 692035.906495: funcgraph_exit:         0.631 us   |  }
+     hello.1.out-987225 [008] 692035.906495: funcgraph_entry:      + 14.895 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906510: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906511: sys_exit_openat:      0x3
+     hello.1.out-987225 [008] 692035.906511: funcgraph_exit:         0.691 us   |  }
+     hello.1.out-987225 [008] 692035.906511: funcgraph_entry:        0.295 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906512: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906513: sys_enter_read:       fd: 0x00000003, buf: 0x7ffee26082e8, count: 0x00000340
+     hello.1.out-987225 [008] 692035.906513: funcgraph_exit:         0.808 us   |  }
+     hello.1.out-987225 [008] 692035.906513: funcgraph_entry:        5.002 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906519: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906519: sys_exit_read:        0x340
+     hello.1.out-987225 [008] 692035.906519: funcgraph_exit:         0.624 us   |  }
+     hello.1.out-987225 [008] 692035.906520: funcgraph_entry:        0.272 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906521: funcgraph_entry:        0.904 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906523: funcgraph_entry:        7.061 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906530: funcgraph_entry:        0.285 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906531: funcgraph_entry:        0.299 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906532: funcgraph_entry:        0.352 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906533: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906534: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906534: sys_enter_pread64:    fd: 0x00000003, buf: 0x7ffee2607f00, count: 0x00000310, pos: 0x00000040
+     hello.1.out-987225 [008] 692035.906535: funcgraph_exit:         0.737 us   |  }
+     hello.1.out-987225 [008] 692035.906535: funcgraph_entry:        3.316 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906538: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906539: sys_exit_pread64:     0x310
+     hello.1.out-987225 [008] 692035.906539: funcgraph_exit:         0.649 us   |  }
+     hello.1.out-987225 [008] 692035.906539: funcgraph_entry:        0.270 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906540: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906541: sys_enter_newfstat:   fd: 0x00000003, statbuf: 0x7ffee2608180
+     hello.1.out-987225 [008] 692035.906541: funcgraph_exit:         0.633 us   |  }
+     hello.1.out-987225 [008] 692035.906541: funcgraph_entry:        2.870 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906544: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906545: sys_exit_newfstat:    0x0
+     hello.1.out-987225 [008] 692035.906545: funcgraph_exit:         0.614 us   |  }
+     hello.1.out-987225 [008] 692035.906545: funcgraph_entry:        0.287 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906547: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906548: sys_enter_pread64:    fd: 0x00000003, buf: 0x7ffee2607dd0, count: 0x00000310, pos: 0x00000040
+     hello.1.out-987225 [008] 692035.906548: funcgraph_exit:         0.623 us   |  }
+     hello.1.out-987225 [008] 692035.906548: funcgraph_entry:        3.090 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906552: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906552: sys_exit_pread64:     0x310
+     hello.1.out-987225 [008] 692035.906552: funcgraph_exit:         0.621 us   |  }
+     hello.1.out-987225 [008] 692035.906553: funcgraph_entry:        0.270 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906554: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906555: sys_enter_mmap:       addr: 0x00000000, len: 0x00211d90, prot: 0x00000001, flags: 0x00000802, fd: 0x00000003, off: 0x00000000
+     hello.1.out-987225 [008] 692035.906555: funcgraph_exit:         0.575 us   |  }
+     hello.1.out-987225 [008] 692035.906555: funcgraph_entry:      + 15.944 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906571: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906572: sys_exit_mmap:        0x784c53200000
+     hello.1.out-987225 [008] 692035.906572: funcgraph_exit:         0.695 us   |  }
+     hello.1.out-987225 [008] 692035.906573: funcgraph_entry:        0.310 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906574: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906574: sys_enter_mmap:       addr: 0x784c53228000, len: 0x00188000, prot: 0x00000005, flags: 0x00000812, fd: 0x00000003, off: 0x00028000
+     hello.1.out-987225 [008] 692035.906574: funcgraph_exit:         0.670 us   |  }
+     hello.1.out-987225 [008] 692035.906574: funcgraph_entry:      + 37.519 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906612: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906613: sys_exit_mmap:        0x784c53228000
+     hello.1.out-987225 [008] 692035.906613: funcgraph_exit:         0.702 us   |  }
+     hello.1.out-987225 [008] 692035.906613: funcgraph_entry:        0.312 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906614: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906615: sys_enter_mmap:       addr: 0x784c533b0000, len: 0x0004f000, prot: 0x00000001, flags: 0x00000812, fd: 0x00000003, off: 0x001b0000
+     hello.1.out-987225 [008] 692035.906615: funcgraph_exit:         0.698 us   |  }
+     hello.1.out-987225 [008] 692035.906615: funcgraph_entry:      + 20.441 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906636: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906637: sys_exit_mmap:        0x784c533b0000
+     hello.1.out-987225 [008] 692035.906637: funcgraph_exit:         0.694 us   |  }
+     hello.1.out-987225 [008] 692035.906637: funcgraph_entry:        0.311 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906638: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906638: sys_enter_mmap:       addr: 0x784c533ff000, len: 0x00006000, prot: 0x00000003, flags: 0x00000812, fd: 0x00000003, off: 0x001fe000
+     hello.1.out-987225 [008] 692035.906639: funcgraph_exit:         0.622 us   |  }
+     hello.1.out-987225 [008] 692035.906639: funcgraph_entry:      + 25.788 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906665: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906666: sys_exit_mmap:        0x784c533ff000
+     hello.1.out-987225 [008] 692035.906666: funcgraph_exit:         0.734 us   |  }
+     hello.1.out-987225 [008] 692035.906666: funcgraph_entry:        0.356 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906668: funcgraph_entry:        0.841 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906669: funcgraph_entry:      + 16.325 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906686: funcgraph_entry:        0.318 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906687: funcgraph_entry:        0.321 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906687: funcgraph_entry:        0.317 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906688: funcgraph_entry:        0.290 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906689: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906689: sys_enter_mmap:       addr: 0x784c53405000, len: 0x0000cd90, prot: 0x00000003, flags: 0x00000032, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-987225 [008] 692035.906690: funcgraph_exit:         0.632 us   |  }
+     hello.1.out-987225 [008] 692035.906690: funcgraph_entry:      + 17.028 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906707: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906708: sys_exit_mmap:        0x784c53405000
+     hello.1.out-987225 [008] 692035.906708: funcgraph_exit:         0.703 us   |  }
+     hello.1.out-987225 [008] 692035.906708: funcgraph_entry:        0.321 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906710: funcgraph_entry:        0.682 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906711: funcgraph_entry:        8.684 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906720: funcgraph_entry:        0.308 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906721: funcgraph_entry:        0.314 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906722: funcgraph_entry:        0.301 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906722: funcgraph_entry:        0.270 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906725: funcgraph_entry:        0.613 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906726: funcgraph_entry:        9.557 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906736: funcgraph_entry:        0.323 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906737: funcgraph_entry:        0.334 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906737: funcgraph_entry:        0.326 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906738: funcgraph_entry:        0.294 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906740: funcgraph_entry:        0.674 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906741: funcgraph_entry:      + 14.386 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906756: funcgraph_entry:        0.312 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906756: funcgraph_entry:        0.364 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906757: funcgraph_entry:        0.281 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906758: funcgraph_entry:        0.267 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906759: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906759: sys_enter_close:      fd: 0x00000003
+     hello.1.out-987225 [008] 692035.906760: funcgraph_exit:         0.617 us   |  }
+     hello.1.out-987225 [008] 692035.906760: funcgraph_entry:        1.195 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906761: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906762: sys_exit_close:       0x0
+     hello.1.out-987225 [008] 692035.906762: funcgraph_exit:         0.625 us   |  }
+     hello.1.out-987225 [008] 692035.906762: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906764: funcgraph_entry:        0.612 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906765: funcgraph_entry:        7.296 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906773: funcgraph_entry:        0.287 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906773: funcgraph_entry:        0.299 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906774: funcgraph_entry:        0.283 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906775: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906785: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906786: sys_enter_mmap:       addr: 0x00000000, len: 0x00003000, prot: 0x00000003, flags: 0x00000022, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-987225 [008] 692035.906786: funcgraph_exit:         0.740 us   |  }
+     hello.1.out-987225 [008] 692035.906786: funcgraph_entry:        9.611 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906796: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906797: sys_exit_mmap:        0x784c535fe000
+     hello.1.out-987225 [008] 692035.906797: funcgraph_exit:         0.726 us   |  }
+     hello.1.out-987225 [008] 692035.906797: funcgraph_entry:        0.315 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906799: funcgraph_entry:        0.857 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906801: funcgraph_entry:        9.847 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906811: funcgraph_entry:        0.303 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906811: funcgraph_entry:        0.312 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906812: funcgraph_entry:        0.281 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906813: funcgraph_entry:        0.273 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906814: funcgraph_entry:        0.669 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906815: funcgraph_entry:        6.721 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906822: funcgraph_entry:        0.320 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906823: funcgraph_entry:        0.304 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906824: funcgraph_entry:        0.277 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906824: funcgraph_entry:        0.283 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906825: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906826: sys_enter_arch_prctl: option: 0x00001002, arg2: 0x784c535fe740
+     hello.1.out-987225 [008] 692035.906826: funcgraph_exit:         0.801 us   |  }
+     hello.1.out-987225 [008] 692035.906826: funcgraph_entry:        1.201 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906828: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906828: sys_exit_arch_prctl:  0x0
+     hello.1.out-987225 [008] 692035.906829: funcgraph_exit:         0.664 us   |  }
+     hello.1.out-987225 [008] 692035.906829: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906830: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906830: sys_enter_set_tid_address: tidptr: 0x784c535fea10
+     hello.1.out-987225 [008] 692035.906830: funcgraph_exit:         0.834 us   |  }
+     hello.1.out-987225 [008] 692035.906831: funcgraph_entry:        1.521 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906833: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906833: sys_exit_set_tid_address: 0xf1059
+     hello.1.out-987225 [008] 692035.906833: funcgraph_exit:         0.772 us   |  }
+     hello.1.out-987225 [008] 692035.906834: funcgraph_entry:        0.280 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906835: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906835: sys_enter_set_robust_list: head: 0x784c535fea20, len: 0x00000018
+     hello.1.out-987225 [008] 692035.906836: funcgraph_exit:         0.799 us   |  }
+     hello.1.out-987225 [008] 692035.906836: funcgraph_entry:        0.538 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906837: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906837: sys_exit_set_robust_list: 0x0
+     hello.1.out-987225 [008] 692035.906837: funcgraph_exit:         0.815 us   |  }
+     hello.1.out-987225 [008] 692035.906838: funcgraph_entry:        0.278 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906839: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.906839: sys_enter_rseq:       rseq: 0x784c535ff060, rseq_len: 0x00000020, flags: 0x00000000, sig: 0x53053053
+     hello.1.out-987225 [008] 692035.906840: funcgraph_exit:         0.915 us   |  }
+     hello.1.out-987225 [008] 692035.906840: funcgraph_entry:        0.825 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.906841: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.906841: sys_exit_rseq:        0x0
+     hello.1.out-987225 [008] 692035.906842: funcgraph_exit:         0.807 us   |  }
+     hello.1.out-987225 [008] 692035.906842: funcgraph_entry:        0.311 us   |  mem_cgroup_handle_over_high();
+     hello.1.out-987225 [008] 692035.906843: funcgraph_entry:        0.281 us   |  blkcg_maybe_throttle_current();
+     hello.1.out-987225 [008] 692035.906843: funcgraph_entry:        0.852 us   |  __rseq_handle_notify_resume();
+     hello.1.out-987225 [008] 692035.906845: funcgraph_entry:        0.333 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906847: funcgraph_entry:        0.698 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906848: funcgraph_entry:        8.867 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906857: funcgraph_entry:        0.298 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906858: funcgraph_entry:        0.314 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906858: funcgraph_entry:        0.280 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906859: funcgraph_entry:        0.277 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906862: funcgraph_entry:        0.610 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906863: funcgraph_entry:        9.141 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906872: funcgraph_entry:        0.320 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906873: funcgraph_entry:        0.339 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906873: funcgraph_entry:        0.302 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906874: funcgraph_entry:        0.294 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906879: funcgraph_entry:        0.621 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906880: funcgraph_entry:        8.635 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906889: funcgraph_entry:        0.311 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906889: funcgraph_entry:        0.307 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906890: funcgraph_entry:        0.285 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906890: funcgraph_entry:        0.273 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906897: funcgraph_entry:        0.608 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906898: funcgraph_entry:        8.586 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906906: funcgraph_entry:        0.320 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906907: funcgraph_entry:        0.310 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906908: funcgraph_entry:        0.288 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906908: funcgraph_entry:        0.282 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906913: funcgraph_entry:        0.689 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906914: funcgraph_entry:      + 11.417 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906925: funcgraph_entry:        0.276 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906926: funcgraph_entry:        0.294 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906926: funcgraph_entry:        0.284 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906927: funcgraph_entry:        0.273 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906940: funcgraph_entry:        0.400 us   |  irq_enter_rcu();
+     hello.1.out-987225 [008] 692035.906940: funcgraph_entry:      + 15.276 us  |  __sysvec_apic_timer_interrupt();
+     hello.1.out-987225 [008] 692035.906956: funcgraph_entry:        0.476 us   |  irq_exit_rcu();
+     hello.1.out-987225 [008] 692035.906957: funcgraph_entry:        0.363 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906979: funcgraph_entry:        0.848 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906980: funcgraph_entry:      + 12.271 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.906992: funcgraph_entry:        0.311 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.906993: funcgraph_entry:        0.317 us   |  up_read();
+     hello.1.out-987225 [008] 692035.906994: funcgraph_entry:        0.309 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.906994: funcgraph_entry:        0.309 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.906996: funcgraph_entry:        0.695 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.906997: funcgraph_entry:        9.795 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907008: funcgraph_entry:        0.305 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907008: funcgraph_entry:        0.309 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907009: funcgraph_entry:        0.288 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907009: funcgraph_entry:        0.266 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907012: funcgraph_entry:        0.776 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907013: funcgraph_entry:      + 11.250 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907025: funcgraph_entry:        0.315 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907025: funcgraph_entry:        0.307 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907026: funcgraph_entry:        0.288 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907026: funcgraph_entry:        0.307 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907030: funcgraph_entry:        0.770 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907031: funcgraph_entry:      + 11.306 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907042: funcgraph_entry:        0.314 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907043: funcgraph_entry:        0.316 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907044: funcgraph_entry:        0.298 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907044: funcgraph_entry:        0.290 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907048: funcgraph_entry:        0.739 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907050: funcgraph_entry:      + 11.875 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907062: funcgraph_entry:        0.308 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907062: funcgraph_entry:        0.315 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907063: funcgraph_entry:        0.292 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907064: funcgraph_entry:        0.303 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907068: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907069: sys_enter_mprotect:   start: 0x784c533ff000, len: 0x00004000, prot: 0x00000001
+     hello.1.out-987225 [008] 692035.907069: funcgraph_exit:         0.845 us   |  }
+     hello.1.out-987225 [008] 692035.907069: funcgraph_entry:      + 25.552 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.907095: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.907096: sys_exit_mprotect:    0x0
+     hello.1.out-987225 [008] 692035.907096: funcgraph_exit:         0.808 us   |  }
+     hello.1.out-987225 [008] 692035.907097: funcgraph_entry:        0.335 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907101: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907102: sys_enter_mprotect:   start: 0x604a12fcd000, len: 0x00001000, prot: 0x00000001
+     hello.1.out-987225 [008] 692035.907102: funcgraph_exit:         0.770 us   |  }
+     hello.1.out-987225 [008] 692035.907102: funcgraph_entry:      + 13.161 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.907116: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.907116: sys_exit_mprotect:    0x0
+     hello.1.out-987225 [008] 692035.907117: funcgraph_exit:         0.734 us   |  }
+     hello.1.out-987225 [008] 692035.907117: funcgraph_entry:        0.330 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907124: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907124: sys_enter_mprotect:   start: 0x784c53651000, len: 0x00002000, prot: 0x00000001
+     hello.1.out-987225 [008] 692035.907125: funcgraph_exit:         0.757 us   |  }
+     hello.1.out-987225 [008] 692035.907125: funcgraph_entry:      + 15.015 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.907141: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.907141: sys_exit_mprotect:    0x0
+     hello.1.out-987225 [008] 692035.907141: funcgraph_exit:         0.737 us   |  }
+     hello.1.out-987225 [008] 692035.907142: funcgraph_entry:        0.333 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907144: funcgraph_entry:        0.979 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907145: funcgraph_entry:      + 11.403 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907157: funcgraph_entry:        0.322 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907158: funcgraph_entry:        0.315 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907158: funcgraph_entry:        0.312 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907159: funcgraph_entry:        0.286 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907161: funcgraph_entry:        0.782 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907162: funcgraph_entry:      + 10.963 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907174: funcgraph_entry:        0.312 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907174: funcgraph_entry:        0.309 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907175: funcgraph_entry:        0.306 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907176: funcgraph_entry:        0.286 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907178: funcgraph_entry:        0.750 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907179: funcgraph_entry:        6.874 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907186: funcgraph_entry:        0.312 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907186: funcgraph_entry:        0.381 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907187: funcgraph_entry:        0.640 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907188: funcgraph_entry:        0.288 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907190: funcgraph_entry:        0.694 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907191: funcgraph_entry:        6.446 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907197: funcgraph_entry:        0.297 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907198: funcgraph_entry:        0.311 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907199: funcgraph_entry:        0.332 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907199: funcgraph_entry:        0.285 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907201: funcgraph_entry:        0.807 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907203: funcgraph_entry:      + 11.199 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907214: funcgraph_entry:        0.320 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907215: funcgraph_entry:        0.311 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907215: funcgraph_entry:        0.282 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907216: funcgraph_entry:        0.286 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907217: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907217: sys_enter_prlimit64:  pid: 0x00000000, resource: 0x00000003, new_rlim: 0x00000000, old_rlim: 0x7ffee2608cd0
+     hello.1.out-987225 [008] 692035.907218: funcgraph_exit:         0.821 us   |  }
+     hello.1.out-987225 [008] 692035.907218: funcgraph_entry:        1.852 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.907220: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.907221: sys_exit_prlimit64:   0x0
+     hello.1.out-987225 [008] 692035.907221: funcgraph_exit:         0.803 us   |  }
+     hello.1.out-987225 [008] 692035.907221: funcgraph_entry:        0.280 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907223: funcgraph_entry:        0.638 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907224: funcgraph_entry:        6.901 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907231: funcgraph_entry:        0.273 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907232: funcgraph_entry:        0.305 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907232: funcgraph_entry:        0.281 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907233: funcgraph_entry:        0.277 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907235: funcgraph_entry:        0.800 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907236: funcgraph_entry:      + 12.232 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907249: funcgraph_entry:        0.317 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907249: funcgraph_entry:        0.316 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907250: funcgraph_entry:        0.300 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907250: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907253: funcgraph_entry:        0.734 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907254: funcgraph_entry:        9.650 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907264: funcgraph_entry:        0.319 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907264: funcgraph_entry:        0.324 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907265: funcgraph_entry:        0.288 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907265: funcgraph_entry:        0.296 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907268: funcgraph_entry:        0.646 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907269: funcgraph_entry:        2.223 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907271: funcgraph_entry:        0.286 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907272: funcgraph_entry:        0.295 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907272: funcgraph_entry:        0.279 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907273: funcgraph_entry:        0.284 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907274: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907275: sys_enter_munmap:     addr: 0x784c53601000, len: 0x00011d07
+     hello.1.out-987225 [008] 692035.907275: funcgraph_exit:         0.802 us   |  }
+     hello.1.out-987225 [008] 692035.907275: funcgraph_entry:      + 46.248 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.907322: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.907323: sys_exit_munmap:      0x0
+     hello.1.out-987225 [008] 692035.907323: funcgraph_exit:         0.789 us   |  }
+     hello.1.out-987225 [008] 692035.907323: funcgraph_entry:        5.995 us   |  task_work_run();
+     hello.1.out-987225 [008] 692035.907330: funcgraph_entry:        0.402 us   |  mem_cgroup_handle_over_high();
+     hello.1.out-987225 [008] 692035.907330: funcgraph_entry:        0.301 us   |  blkcg_maybe_throttle_current();
+     hello.1.out-987225 [008] 692035.907331: funcgraph_entry:        0.710 us   |  __rseq_handle_notify_resume();
+     hello.1.out-987225 [008] 692035.907332: funcgraph_entry:        0.275 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907335: funcgraph_entry:        0.740 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907337: funcgraph_entry:      + 11.500 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907349: funcgraph_entry:        0.312 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907349: funcgraph_entry:        0.312 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907350: funcgraph_entry:        0.292 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907351: funcgraph_entry:        0.272 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907354: funcgraph_entry:        0.844 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907355: funcgraph_entry:        4.449 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907360: funcgraph_entry:        0.321 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907360: funcgraph_entry:        0.320 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907361: funcgraph_entry:        0.303 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907361: funcgraph_entry:        0.284 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907364: funcgraph_entry:        0.778 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907365: funcgraph_entry:      + 11.627 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907377: funcgraph_entry:        0.314 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907377: funcgraph_entry:        0.313 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907378: funcgraph_entry:        0.285 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907379: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907382: funcgraph_entry:        0.742 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907383: funcgraph_entry:      + 11.206 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907395: funcgraph_entry:        0.309 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907395: funcgraph_entry:        0.308 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907396: funcgraph_entry:        0.286 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907396: funcgraph_entry:        0.305 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907399: funcgraph_entry:        0.662 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907400: funcgraph_entry:        4.039 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907404: funcgraph_entry:        0.283 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907405: funcgraph_entry:        0.305 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907406: funcgraph_entry:        0.282 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907406: funcgraph_entry:        0.259 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907408: funcgraph_entry:        0.742 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907409: funcgraph_entry:      + 11.060 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907421: funcgraph_entry:        0.300 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907421: funcgraph_entry:        0.305 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907422: funcgraph_entry:        0.276 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907422: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907425: funcgraph_entry:        0.779 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907426: funcgraph_entry:      + 11.042 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907437: funcgraph_entry:        0.324 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907438: funcgraph_entry:        0.319 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907439: funcgraph_entry:        0.296 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907439: funcgraph_entry:        0.376 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907443: funcgraph_entry:        0.739 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907444: funcgraph_entry:      + 11.325 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907456: funcgraph_entry:        0.318 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907457: funcgraph_entry:        0.311 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907457: funcgraph_entry:        0.282 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907458: funcgraph_entry:        0.278 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907459: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907460: sys_enter_newfstat:   fd: 0x00000001, statbuf: 0x7ffee2608be0
+     hello.1.out-987225 [008] 692035.907460: funcgraph_exit:         0.710 us   |  }
+     hello.1.out-987225 [008] 692035.907460: funcgraph_entry:        3.366 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.907464: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.907464: sys_exit_newfstat:    0x0
+     hello.1.out-987225 [008] 692035.907464: funcgraph_exit:         0.636 us   |  }
+     hello.1.out-987225 [008] 692035.907465: funcgraph_entry:        0.272 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907467: funcgraph_entry:        0.734 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907468: funcgraph_entry:      + 10.955 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907479: funcgraph_entry:        0.648 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907480: funcgraph_entry:        0.348 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907481: funcgraph_entry:        0.289 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907481: funcgraph_entry:        0.283 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907482: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907483: sys_enter_getrandom:  ubuf: 0x784c5340a178, len: 0x00000008, flags: 0x00000001
+     hello.1.out-987225 [008] 692035.907483: funcgraph_exit:         0.853 us   |  }
+     hello.1.out-987225 [008] 692035.907484: funcgraph_entry:        2.286 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.907486: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.907486: sys_exit_getrandom:   0x8
+     hello.1.out-987225 [008] 692035.907487: funcgraph_exit:         0.788 us   |  }
+     hello.1.out-987225 [008] 692035.907487: funcgraph_entry:        0.264 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907490: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907490: sys_enter_brk:        brk: 0x00000000
+     hello.1.out-987225 [008] 692035.907491: funcgraph_exit:         0.620 us   |  }
+     hello.1.out-987225 [008] 692035.907491: funcgraph_entry:        0.858 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.907492: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.907492: sys_exit_brk:         0x604a45c82000
+     hello.1.out-987225 [008] 692035.907493: funcgraph_exit:         0.603 us   |  }
+     hello.1.out-987225 [008] 692035.907493: funcgraph_entry:        0.277 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907494: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907494: sys_enter_brk:        brk: 0x604a45ca3000
+     hello.1.out-987225 [008] 692035.907494: funcgraph_exit:         0.597 us   |  }
+     hello.1.out-987225 [008] 692035.907495: funcgraph_entry:        6.859 us   |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.907502: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.907502: sys_exit_brk:         0x604a45ca3000
+     hello.1.out-987225 [008] 692035.907502: funcgraph_exit:         0.659 us   |  }
+     hello.1.out-987225 [008] 692035.907503: funcgraph_entry:        0.273 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907505: funcgraph_entry:        0.647 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907506: funcgraph_entry:      + 16.382 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907522: funcgraph_entry:        0.357 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907523: funcgraph_entry:        0.330 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907524: funcgraph_entry:        0.294 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907524: funcgraph_entry:        0.292 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907527: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907527: sys_enter_write:      fd: 0x00000001, buf: 0x604a45c822a0, count: 0x0000001c
+     hello.1.out-987225 [008] 692035.907528: funcgraph_exit:         0.699 us   |  }
+     hello.1.out-987225 [008] 692035.907528: funcgraph_entry:      + 22.049 us  |  x64_sys_call();
+     hello.1.out-987225 [008] 692035.907550: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987225 [008] 692035.907551: sys_exit_write:       0x1c
+     hello.1.out-987225 [008] 692035.907551: funcgraph_exit:         0.702 us   |  }
+     hello.1.out-987225 [008] 692035.907551: funcgraph_entry:        0.316 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907557: funcgraph_entry:        0.830 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907558: funcgraph_entry:      + 11.465 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907570: funcgraph_entry:        0.322 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907570: funcgraph_entry:        0.332 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907571: funcgraph_entry:        0.300 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907572: funcgraph_entry:        0.290 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907574: funcgraph_entry:        0.686 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907575: funcgraph_entry:        8.516 us   |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907584: funcgraph_entry:        0.299 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907585: funcgraph_entry:        0.322 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907586: funcgraph_entry:        0.296 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907586: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907590: funcgraph_entry:        0.759 us   |  lock_vma_under_rcu();
+     hello.1.out-987225 [008] 692035.907591: funcgraph_entry:      + 11.309 us  |  handle_mm_fault();
+     hello.1.out-987225 [008] 692035.907603: funcgraph_entry:        0.347 us   |  __rcu_read_lock();
+     hello.1.out-987225 [008] 692035.907603: funcgraph_entry:        0.347 us   |  up_read();
+     hello.1.out-987225 [008] 692035.907604: funcgraph_entry:        0.296 us   |  __rcu_read_unlock();
+     hello.1.out-987225 [008] 692035.907605: funcgraph_entry:        0.284 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987225 [008] 692035.907606: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987225 [008] 692035.907606: sys_enter_exit_group: error_code: 0x00000000
+     hello.1.out-987225 [008] 692035.907606: funcgraph_exit:         0.788 us   |  }
+     hello.1.out-987225 [008] 692035.907607: funcgraph_entry:                   |  x64_sys_call() {

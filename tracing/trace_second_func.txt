@@ -1,0 +1,1363 @@
+cpus=28
+     hello.1.out-987566 [010] 692184.128544: funcgraph_entry:        1.979 us   |  mutex_unlock();
+     hello.1.out-987566 [010] 692184.128547: funcgraph_entry:                   |  __f_unlock_pos() {
+     hello.1.out-987566 [010] 692184.128547: funcgraph_entry:        0.332 us   |    mutex_unlock();
+     hello.1.out-987566 [010] 692184.128548: funcgraph_exit:         0.967 us   |  }
+     hello.1.out-987566 [010] 692184.128548: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.128549: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.128549: sys_exit_write:       0x1
+     hello.1.out-987566 [010] 692184.128550: funcgraph_exit:         1.051 us   |    }
+     hello.1.out-987566 [010] 692184.128550: funcgraph_exit:         1.722 us   |  }
+     hello.1.out-987566 [010] 692184.128551: funcgraph_entry:        0.319 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.128552: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.128552: sys_enter_execve:     filename: 0x7fff252389d0, argv: 0x7fff25239ed0, envp: 0x7fff25239ee0
+     hello.1.out-987566 [010] 692184.128553: funcgraph_exit:         1.103 us   |  }
+     hello.1.out-987566 [010] 692184.128553: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.128554: funcgraph_entry:                   |    __x64_sys_execve() {
+          <idle>-0     [022] 692184.128783: funcgraph_entry:        2.529 us   |  _raw_spin_lock_irqsave();
+          <idle>-0     [022] 692184.128786: funcgraph_entry:        0.571 us   |  _raw_spin_unlock_irqrestore();
+          <idle>-0     [022] 692184.128788: funcgraph_entry:                   |  switch_mm_irqs_off() {
+          <idle>-0     [022] 692184.128790: funcgraph_entry:        0.803 us   |    switch_ldt();
+          <idle>-0     [022] 692184.128791: funcgraph_exit:         3.259 us   |  }
+          <idle>-0     [010] 692184.129086: funcgraph_entry:        0.949 us   |  _raw_spin_lock_irqsave();
+          <idle>-0     [010] 692184.129087: funcgraph_entry:        0.396 us   |  _raw_spin_unlock_irqrestore();
+          <idle>-0     [010] 692184.129088: funcgraph_entry:        0.675 us   |  switch_mm_irqs_off();
+     hello.1.out-987566 [010] 692184.130050: funcgraph_exit:       # 1496.005 us |    }
+     hello.1.out-987566 [010] 692184.130050: funcgraph_exit:       # 1497.173 us |  }
+     hello.1.out-987566 [010] 692184.130051: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130051: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130052: sys_exit_execve:      0x0
+     hello.1.out-987566 [010] 692184.130052: funcgraph_exit:         1.071 us   |    }
+     hello.1.out-987566 [010] 692184.130053: funcgraph_exit:         1.835 us   |  }
+     hello.1.out-987566 [010] 692184.130053: funcgraph_entry:                   |  task_work_run() {
+     hello.1.out-987566 [010] 692184.130053: funcgraph_entry:        0.320 us   |    _raw_spin_lock_irq();
+     hello.1.out-987566 [010] 692184.130054: funcgraph_entry:        0.303 us   |    _raw_spin_unlock_irq();
+     hello.1.out-987566 [010] 692184.130055: funcgraph_entry:        0.345 us   |    task_mm_cid_work();
+     hello.1.out-987566 [010] 692184.130055: funcgraph_entry:        0.289 us   |    __cond_resched();
+     hello.1.out-987566 [010] 692184.130056: funcgraph_exit:         2.907 us   |  }
+     hello.1.out-987566 [010] 692184.130056: funcgraph_entry:        0.309 us   |  mem_cgroup_handle_over_high();
+     hello.1.out-987566 [010] 692184.130057: funcgraph_entry:        0.309 us   |  blkcg_maybe_throttle_current();
+     hello.1.out-987566 [010] 692184.130057: funcgraph_entry:        0.307 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130058: funcgraph_entry:                   |  switch_fpu_return() {
+     hello.1.out-987566 [010] 692184.130058: funcgraph_entry:        0.654 us   |    restore_fpregs_from_fpstate();
+     hello.1.out-987566 [010] 692184.130059: funcgraph_exit:         1.376 us   |  }
+     hello.1.out-987566 [010] 692184.130062: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130062: funcgraph_entry:        0.345 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130063: funcgraph_entry:        0.359 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130064: funcgraph_entry:        0.326 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130064: funcgraph_exit:         2.628 us   |  }
+     hello.1.out-987566 [010] 692184.130065: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130065: funcgraph_entry:      + 13.077 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130078: funcgraph_entry:        0.367 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130079: funcgraph_entry:        0.329 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130080: funcgraph_entry:        0.439 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130080: funcgraph_entry:        0.305 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130081: funcgraph_exit:       + 16.358 us  |  }
+     hello.1.out-987566 [010] 692184.130081: funcgraph_entry:        0.324 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130082: funcgraph_entry:        0.300 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130082: funcgraph_entry:        0.296 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130083: funcgraph_entry:        0.313 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130085: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130086: funcgraph_entry:        0.279 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130086: funcgraph_entry:        0.302 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130087: funcgraph_entry:        0.298 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130087: funcgraph_exit:         2.101 us   |  }
+     hello.1.out-987566 [010] 692184.130088: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130088: funcgraph_entry:        8.409 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130097: funcgraph_entry:        0.300 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130097: funcgraph_entry:        0.283 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130098: funcgraph_entry:        0.379 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130099: funcgraph_entry:        0.283 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130099: funcgraph_exit:       + 11.508 us  |  }
+     hello.1.out-987566 [010] 692184.130100: funcgraph_entry:        0.286 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130100: funcgraph_entry:        0.327 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130101: funcgraph_entry:        0.325 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130101: funcgraph_entry:        0.321 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130103: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130104: funcgraph_entry:      + 11.345 us  |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130115: funcgraph_entry:        0.495 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130116: funcgraph_entry:        0.359 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130117: funcgraph_exit:       + 13.565 us  |  }
+     hello.1.out-987566 [010] 692184.130117: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130118: funcgraph_entry:        7.735 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130126: funcgraph_entry:        0.282 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130126: funcgraph_entry:        0.285 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130127: funcgraph_entry:        0.414 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130127: funcgraph_entry:        0.277 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130128: funcgraph_exit:       + 10.758 us  |  }
+     hello.1.out-987566 [010] 692184.130128: funcgraph_entry:        0.277 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130129: funcgraph_entry:        0.298 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130129: funcgraph_entry:        0.283 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130130: funcgraph_entry:        0.275 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130132: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130133: funcgraph_entry:        0.321 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130133: funcgraph_entry:        0.301 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130134: funcgraph_entry:        0.285 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130135: funcgraph_exit:         2.104 us   |  }
+     hello.1.out-987566 [010] 692184.130135: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130135: funcgraph_entry:        2.913 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130139: funcgraph_entry:        0.292 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130139: funcgraph_entry:        0.291 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130140: funcgraph_entry:        0.365 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130140: funcgraph_entry:        0.271 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130141: funcgraph_exit:         5.960 us   |  }
+     hello.1.out-987566 [010] 692184.130141: funcgraph_entry:        0.281 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130142: funcgraph_entry:        0.300 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130142: funcgraph_entry:        0.284 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130143: funcgraph_entry:        0.273 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130145: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130145: funcgraph_entry:        0.278 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130146: funcgraph_entry:        0.306 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130146: funcgraph_entry:        0.263 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130147: funcgraph_exit:         2.018 us   |  }
+     hello.1.out-987566 [010] 692184.130147: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130147: funcgraph_entry:        7.758 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130155: funcgraph_entry:        0.295 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130156: funcgraph_entry:        0.974 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130158: funcgraph_entry:        0.875 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130159: funcgraph_entry:        0.279 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130160: funcgraph_exit:       + 12.721 us  |  }
+     hello.1.out-987566 [010] 692184.130160: funcgraph_entry:        0.280 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130161: funcgraph_entry:        0.301 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130161: funcgraph_entry:        0.274 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130162: funcgraph_entry:        0.272 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130164: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130164: funcgraph_entry:        0.297 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130165: funcgraph_entry:        0.317 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130166: funcgraph_entry:        0.284 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130166: funcgraph_exit:         2.169 us   |  }
+     hello.1.out-987566 [010] 692184.130166: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130167: funcgraph_entry:        6.203 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130173: funcgraph_entry:        0.321 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130174: funcgraph_entry:        0.272 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130174: funcgraph_entry:        0.349 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130175: funcgraph_entry:        0.275 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130176: funcgraph_exit:         9.219 us   |  }
+     hello.1.out-987566 [010] 692184.130176: funcgraph_entry:        0.296 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130177: funcgraph_entry:        0.299 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130178: funcgraph_entry:        1.086 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130178: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130186: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130187: funcgraph_entry:        0.340 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130187: funcgraph_entry:        0.355 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130188: funcgraph_entry:        0.331 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130189: funcgraph_exit:         2.414 us   |  }
+     hello.1.out-987566 [010] 692184.130189: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130189: funcgraph_entry:        8.059 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130198: funcgraph_entry:        0.296 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130198: funcgraph_entry:        0.271 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130199: funcgraph_entry:        0.380 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130200: funcgraph_entry:        0.281 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130200: funcgraph_exit:       + 11.134 us  |  }
+     hello.1.out-987566 [010] 692184.130200: funcgraph_entry:        0.284 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130201: funcgraph_entry:        0.301 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130202: funcgraph_entry:        0.342 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130202: funcgraph_entry:        0.270 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130203: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130204: sys_enter_brk:        brk: 0x00000000
+     hello.1.out-987566 [010] 692184.130204: funcgraph_exit:         0.903 us   |  }
+     hello.1.out-987566 [010] 692184.130204: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130205: funcgraph_entry:        0.743 us   |    __x64_sys_brk();
+     hello.1.out-987566 [010] 692184.130206: funcgraph_exit:         1.720 us   |  }
+     hello.1.out-987566 [010] 692184.130206: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130207: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130207: sys_exit_brk:         0x62168699f000
+     hello.1.out-987566 [010] 692184.130207: funcgraph_exit:         0.694 us   |    }
+     hello.1.out-987566 [010] 692184.130208: funcgraph_exit:         1.245 us   |  }
+     hello.1.out-987566 [010] 692184.130208: funcgraph_entry:        0.303 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130229: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130229: funcgraph_entry:        0.284 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130230: funcgraph_entry:        0.302 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130231: funcgraph_entry:        0.288 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130231: funcgraph_exit:         2.106 us   |  }
+     hello.1.out-987566 [010] 692184.130231: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130232: funcgraph_entry:        8.247 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130240: funcgraph_entry:        0.293 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130241: funcgraph_entry:        0.284 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130241: funcgraph_entry:        0.405 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130242: funcgraph_entry:        0.269 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130243: funcgraph_exit:       + 11.262 us  |  }
+     hello.1.out-987566 [010] 692184.130243: funcgraph_entry:        0.275 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130244: funcgraph_entry:        0.296 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130244: funcgraph_entry:        0.351 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130245: funcgraph_entry:        0.277 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130292: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130292: funcgraph_entry:        0.354 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130293: funcgraph_entry:        0.354 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130293: funcgraph_entry:        0.330 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130294: funcgraph_exit:         2.460 us   |  }
+     hello.1.out-987566 [010] 692184.130294: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130295: funcgraph_entry:      + 11.112 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130306: funcgraph_entry:        0.302 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130307: funcgraph_entry:        0.282 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130307: funcgraph_entry:        0.377 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130308: funcgraph_entry:        0.274 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130309: funcgraph_exit:       + 14.131 us  |  }
+     hello.1.out-987566 [010] 692184.130309: funcgraph_entry:        0.274 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130309: funcgraph_entry:        0.298 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130310: funcgraph_entry:        0.280 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130311: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130314: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130314: funcgraph_entry:        0.274 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130315: funcgraph_entry:        0.328 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130315: funcgraph_entry:        0.292 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130316: funcgraph_exit:         2.523 us   |  }
+     hello.1.out-987566 [010] 692184.130317: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130317: funcgraph_entry:        3.521 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130321: funcgraph_entry:        0.273 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130321: funcgraph_entry:        0.281 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130322: funcgraph_entry:        0.422 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130323: funcgraph_entry:        0.300 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130323: funcgraph_exit:         6.595 us   |  }
+     hello.1.out-987566 [010] 692184.130323: funcgraph_entry:        0.276 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130324: funcgraph_entry:        0.307 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130325: funcgraph_entry:        0.295 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130325: funcgraph_entry:        0.274 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130329: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130329: funcgraph_entry:        0.285 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130330: funcgraph_entry:        0.333 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130330: funcgraph_entry:        0.289 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130331: funcgraph_exit:         2.188 us   |  }
+     hello.1.out-987566 [010] 692184.130331: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130332: funcgraph_entry:        4.008 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130336: funcgraph_entry:        0.282 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130337: funcgraph_entry:        0.270 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130337: funcgraph_entry:        0.371 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130338: funcgraph_entry:        0.278 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130338: funcgraph_exit:         6.905 us   |  }
+     hello.1.out-987566 [010] 692184.130339: funcgraph_entry:        0.281 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130339: funcgraph_entry:        0.299 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130340: funcgraph_entry:        0.288 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130340: funcgraph_entry:        0.272 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130343: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130343: funcgraph_entry:        0.281 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130344: funcgraph_entry:        0.294 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130345: funcgraph_entry:        0.285 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130345: funcgraph_exit:         2.009 us   |  }
+     hello.1.out-987566 [010] 692184.130345: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130346: funcgraph_entry:        9.422 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130356: funcgraph_entry:        0.286 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130356: funcgraph_entry:        0.284 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130357: funcgraph_entry:        0.368 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130357: funcgraph_entry:        0.280 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130358: funcgraph_exit:       + 12.418 us  |  }
+     hello.1.out-987566 [010] 692184.130358: funcgraph_entry:        0.276 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130359: funcgraph_entry:        0.298 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130359: funcgraph_entry:        0.292 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130360: funcgraph_entry:        0.264 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130362: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130363: funcgraph_entry:        0.283 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130363: funcgraph_entry:        0.303 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130364: funcgraph_entry:        0.285 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130364: funcgraph_exit:         2.125 us   |  }
+     hello.1.out-987566 [010] 692184.130365: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130365: funcgraph_entry:        1.548 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130367: funcgraph_exit:         2.169 us   |  }
+     hello.1.out-987566 [010] 692184.130367: funcgraph_entry:                   |  lock_mm_and_find_vma() {
+     hello.1.out-987566 [010] 692184.130368: funcgraph_entry:        0.325 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130368: funcgraph_entry:        0.574 us   |    find_vma();
+     hello.1.out-987566 [010] 692184.130369: funcgraph_exit:         1.749 us   |  }
+     hello.1.out-987566 [010] 692184.130369: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130370: funcgraph_entry:        3.122 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130373: funcgraph_entry:        0.275 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130374: funcgraph_entry:        0.274 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130374: funcgraph_entry:        0.359 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130375: funcgraph_entry:        0.275 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130376: funcgraph_exit:         6.064 us   |  }
+     hello.1.out-987566 [010] 692184.130376: funcgraph_entry:        0.338 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130377: funcgraph_entry:        0.307 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130385: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130385: sys_enter_mmap:       addr: 0x00000000, len: 0x00002000, prot: 0x00000003, flags: 0x00000022, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-987566 [010] 692184.130386: funcgraph_exit:         1.078 us   |  }
+     hello.1.out-987566 [010] 692184.130386: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130386: funcgraph_entry:      + 11.682 us  |    __x64_sys_mmap();
+     hello.1.out-987566 [010] 692184.130398: funcgraph_exit:       + 12.628 us  |  }
+     hello.1.out-987566 [010] 692184.130399: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130399: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130399: sys_exit_mmap:        0x76aec6826000
+     hello.1.out-987566 [010] 692184.130400: funcgraph_exit:         0.831 us   |    }
+     hello.1.out-987566 [010] 692184.130400: funcgraph_exit:         1.441 us   |  }
+     hello.1.out-987566 [010] 692184.130401: funcgraph_entry:        0.342 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130403: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130403: funcgraph_entry:        0.294 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130404: funcgraph_entry:        0.327 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130404: funcgraph_entry:        0.352 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130405: funcgraph_exit:         2.207 us   |  }
+     hello.1.out-987566 [010] 692184.130405: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130405: funcgraph_entry:        9.523 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130415: funcgraph_entry:        0.311 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130416: funcgraph_entry:        0.287 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130416: funcgraph_entry:        0.365 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130417: funcgraph_entry:        0.285 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130418: funcgraph_exit:       + 12.609 us  |  }
+     hello.1.out-987566 [010] 692184.130418: funcgraph_entry:        0.281 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130419: funcgraph_entry:        0.298 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130419: funcgraph_entry:        0.278 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130420: funcgraph_entry:        0.275 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130422: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130422: sys_enter_access:     filename: 0x76aec685d5b0, mode: 0x00000004
+     hello.1.out-987566 [010] 692184.130423: funcgraph_exit:         0.831 us   |  }
+     hello.1.out-987566 [010] 692184.130423: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130424: funcgraph_entry:        6.763 us   |    __x64_sys_access();
+     hello.1.out-987566 [010] 692184.130431: funcgraph_exit:         7.743 us   |  }
+     hello.1.out-987566 [010] 692184.130431: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130431: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130431: sys_exit_access:      0xfffffffffffffffe
+     hello.1.out-987566 [010] 692184.130432: funcgraph_exit:         0.716 us   |    }
+     hello.1.out-987566 [010] 692184.130432: funcgraph_exit:         1.265 us   |  }
+     hello.1.out-987566 [010] 692184.130432: funcgraph_entry:        0.274 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130435: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130436: funcgraph_entry:        0.341 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130437: funcgraph_entry:        0.370 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130437: funcgraph_entry:        0.337 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130438: funcgraph_exit:         2.489 us   |  }
+     hello.1.out-987566 [010] 692184.130438: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130439: funcgraph_entry:        8.550 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130447: funcgraph_entry:        0.286 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130448: funcgraph_entry:        0.273 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130449: funcgraph_entry:        0.368 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130449: funcgraph_entry:        0.274 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130450: funcgraph_exit:       + 11.530 us  |  }
+     hello.1.out-987566 [010] 692184.130450: funcgraph_entry:        0.277 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130451: funcgraph_entry:        0.297 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130451: funcgraph_entry:        0.281 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130452: funcgraph_entry:        0.282 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130455: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130455: sys_enter_openat:     dfd: 0xffffff9c, filename: 0x76aec685c38f, flags: 0x00080000, mode: 0x00000000
+     hello.1.out-987566 [010] 692184.130456: funcgraph_exit:         0.744 us   |  }
+     hello.1.out-987566 [010] 692184.130456: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130457: funcgraph_entry:      + 14.544 us  |    __x64_sys_openat();
+     hello.1.out-987566 [010] 692184.130472: funcgraph_exit:       + 15.335 us  |  }
+     hello.1.out-987566 [010] 692184.130472: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130472: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130472: sys_exit_openat:      0x3
+     hello.1.out-987566 [010] 692184.130473: funcgraph_exit:         0.595 us   |    }
+     hello.1.out-987566 [010] 692184.130473: funcgraph_exit:         1.276 us   |  }
+     hello.1.out-987566 [010] 692184.130473: funcgraph_entry:        0.282 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130475: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130475: sys_enter_newfstat:   fd: 0x00000003, statbuf: 0x7ffccc250080
+     hello.1.out-987566 [010] 692184.130475: funcgraph_exit:         0.718 us   |  }
+     hello.1.out-987566 [010] 692184.130476: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130476: funcgraph_entry:        4.177 us   |    __x64_sys_newfstat();
+     hello.1.out-987566 [010] 692184.130480: funcgraph_exit:         4.937 us   |  }
+     hello.1.out-987566 [010] 692184.130481: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130481: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130481: sys_exit_newfstat:    0x0
+     hello.1.out-987566 [010] 692184.130482: funcgraph_exit:         0.651 us   |    }
+     hello.1.out-987566 [010] 692184.130482: funcgraph_exit:         1.254 us   |  }
+     hello.1.out-987566 [010] 692184.130482: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130483: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130483: sys_enter_mmap:       addr: 0x00000000, len: 0x00011d07, prot: 0x00000001, flags: 0x00000002, fd: 0x00000003, off: 0x00000000
+     hello.1.out-987566 [010] 692184.130484: funcgraph_exit:         0.607 us   |  }
+     hello.1.out-987566 [010] 692184.130484: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130484: funcgraph_entry:      + 17.697 us  |    __x64_sys_mmap();
+     hello.1.out-987566 [010] 692184.130502: funcgraph_exit:       + 18.358 us  |  }
+     hello.1.out-987566 [010] 692184.130503: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130503: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130503: sys_exit_mmap:        0x76aec6814000
+     hello.1.out-987566 [010] 692184.130504: funcgraph_exit:         0.735 us   |    }
+     hello.1.out-987566 [010] 692184.130504: funcgraph_exit:         1.375 us   |  }
+     hello.1.out-987566 [010] 692184.130504: funcgraph_entry:        0.303 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130505: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130506: sys_enter_close:      fd: 0x00000003
+     hello.1.out-987566 [010] 692184.130506: funcgraph_exit:         0.804 us   |  }
+     hello.1.out-987566 [010] 692184.130506: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130507: funcgraph_entry:        1.164 us   |    __x64_sys_close();
+     hello.1.out-987566 [010] 692184.130508: funcgraph_exit:         1.986 us   |  }
+     hello.1.out-987566 [010] 692184.130509: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130509: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130509: sys_exit_close:       0x0
+     hello.1.out-987566 [010] 692184.130510: funcgraph_exit:         0.583 us   |    }
+     hello.1.out-987566 [010] 692184.130510: funcgraph_exit:         1.127 us   |  }
+     hello.1.out-987566 [010] 692184.130510: funcgraph_entry:        0.296 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130512: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130512: funcgraph_entry:        0.275 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130513: funcgraph_entry:        0.299 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130514: funcgraph_entry:        0.283 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130514: funcgraph_exit:         2.220 us   |  }
+     hello.1.out-987566 [010] 692184.130514: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130515: funcgraph_entry:      + 21.999 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130537: funcgraph_entry:        0.372 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130538: funcgraph_entry:        0.286 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130538: funcgraph_entry:        0.473 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130539: funcgraph_entry:        0.285 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130540: funcgraph_exit:       + 25.220 us  |  }
+     hello.1.out-987566 [010] 692184.130540: funcgraph_entry:        0.285 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130541: funcgraph_entry:        0.319 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130541: funcgraph_entry:        0.286 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130542: funcgraph_entry:        0.275 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130546: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130546: sys_enter_openat:     dfd: 0xffffff9c, filename: 0x76aec6826140, flags: 0x00080000, mode: 0x00000000
+     hello.1.out-987566 [010] 692184.130546: funcgraph_exit:         0.627 us   |  }
+     hello.1.out-987566 [010] 692184.130547: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130547: funcgraph_entry:      + 16.311 us  |    __x64_sys_openat();
+     hello.1.out-987566 [010] 692184.130564: funcgraph_exit:       + 16.938 us  |  }
+     hello.1.out-987566 [010] 692184.130564: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130564: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130564: sys_exit_openat:      0x3
+     hello.1.out-987566 [010] 692184.130565: funcgraph_exit:         0.580 us   |    }
+     hello.1.out-987566 [010] 692184.130565: funcgraph_exit:         1.164 us   |  }
+     hello.1.out-987566 [010] 692184.130565: funcgraph_entry:        0.282 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130566: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130567: sys_enter_read:       fd: 0x00000003, buf: 0x7ffccc2502b8, count: 0x00000340
+     hello.1.out-987566 [010] 692184.130567: funcgraph_exit:         0.735 us   |  }
+     hello.1.out-987566 [010] 692184.130567: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130568: funcgraph_entry:        4.637 us   |    __x64_sys_read();
+     hello.1.out-987566 [010] 692184.130573: funcgraph_exit:         5.437 us   |  }
+     hello.1.out-987566 [010] 692184.130573: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130573: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130574: sys_exit_read:        0x340
+     hello.1.out-987566 [010] 692184.130574: funcgraph_exit:         0.645 us   |    }
+     hello.1.out-987566 [010] 692184.130574: funcgraph_exit:         1.185 us   |  }
+     hello.1.out-987566 [010] 692184.130574: funcgraph_entry:        0.282 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130576: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130577: funcgraph_entry:        0.281 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130578: funcgraph_entry:        0.309 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130578: funcgraph_entry:        0.286 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130579: funcgraph_exit:         2.332 us   |  }
+     hello.1.out-987566 [010] 692184.130579: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130579: funcgraph_entry:        6.346 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130586: funcgraph_entry:        0.288 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130587: funcgraph_entry:        0.338 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130588: funcgraph_entry:        0.382 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130588: funcgraph_entry:        0.280 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130589: funcgraph_exit:         9.672 us   |  }
+     hello.1.out-987566 [010] 692184.130589: funcgraph_entry:        0.279 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130590: funcgraph_entry:        0.330 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130590: funcgraph_entry:        0.275 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130591: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130592: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130592: sys_enter_pread64:    fd: 0x00000003, buf: 0x7ffccc24fed0, count: 0x00000310, pos: 0x00000040
+     hello.1.out-987566 [010] 692184.130592: funcgraph_exit:         0.755 us   |  }
+     hello.1.out-987566 [010] 692184.130593: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130593: funcgraph_entry:        3.036 us   |    __x64_sys_pread64();
+     hello.1.out-987566 [010] 692184.130596: funcgraph_exit:         3.727 us   |  }
+     hello.1.out-987566 [010] 692184.130597: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130597: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130597: sys_exit_pread64:     0x310
+     hello.1.out-987566 [010] 692184.130598: funcgraph_exit:         0.513 us   |    }
+     hello.1.out-987566 [010] 692184.130598: funcgraph_exit:         1.101 us   |  }
+     hello.1.out-987566 [010] 692184.130598: funcgraph_entry:        0.266 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130599: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130599: sys_enter_newfstat:   fd: 0x00000003, statbuf: 0x7ffccc250150
+     hello.1.out-987566 [010] 692184.130600: funcgraph_exit:         0.618 us   |  }
+     hello.1.out-987566 [010] 692184.130600: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130600: funcgraph_entry:        2.557 us   |    __x64_sys_newfstat();
+     hello.1.out-987566 [010] 692184.130603: funcgraph_exit:         3.156 us   |  }
+     hello.1.out-987566 [010] 692184.130603: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130604: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130604: sys_exit_newfstat:    0x0
+     hello.1.out-987566 [010] 692184.130604: funcgraph_exit:         0.497 us   |    }
+     hello.1.out-987566 [010] 692184.130605: funcgraph_exit:         1.038 us   |  }
+     hello.1.out-987566 [010] 692184.130605: funcgraph_entry:        0.275 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130607: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130607: sys_enter_pread64:    fd: 0x00000003, buf: 0x7ffccc24fda0, count: 0x00000310, pos: 0x00000040
+     hello.1.out-987566 [010] 692184.130608: funcgraph_exit:         0.693 us   |  }
+     hello.1.out-987566 [010] 692184.130608: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130608: funcgraph_entry:        2.828 us   |    __x64_sys_pread64();
+     hello.1.out-987566 [010] 692184.130611: funcgraph_exit:         3.404 us   |  }
+     hello.1.out-987566 [010] 692184.130612: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130612: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130612: sys_exit_pread64:     0x310
+     hello.1.out-987566 [010] 692184.130613: funcgraph_exit:         0.530 us   |    }
+     hello.1.out-987566 [010] 692184.130613: funcgraph_exit:         1.076 us   |  }
+     hello.1.out-987566 [010] 692184.130613: funcgraph_entry:        0.276 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130615: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130615: sys_enter_mmap:       addr: 0x00000000, len: 0x00211d90, prot: 0x00000001, flags: 0x00000802, fd: 0x00000003, off: 0x00000000
+     hello.1.out-987566 [010] 692184.130615: funcgraph_exit:         0.604 us   |  }
+     hello.1.out-987566 [010] 692184.130616: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130616: funcgraph_entry:      + 13.958 us  |    __x64_sys_mmap();
+     hello.1.out-987566 [010] 692184.130630: funcgraph_exit:       + 14.627 us  |  }
+     hello.1.out-987566 [010] 692184.130631: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130631: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130631: sys_exit_mmap:        0x76aec6600000
+     hello.1.out-987566 [010] 692184.130632: funcgraph_exit:         0.599 us   |    }
+     hello.1.out-987566 [010] 692184.130632: funcgraph_exit:         1.260 us   |  }
+     hello.1.out-987566 [010] 692184.130632: funcgraph_entry:        0.288 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130633: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130633: sys_enter_mmap:       addr: 0x76aec6628000, len: 0x00188000, prot: 0x00000005, flags: 0x00000812, fd: 0x00000003, off: 0x00028000
+     hello.1.out-987566 [010] 692184.130634: funcgraph_exit:         0.641 us   |  }
+     hello.1.out-987566 [010] 692184.130634: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130634: funcgraph_entry:      + 55.887 us  |    __x64_sys_mmap();
+     hello.1.out-987566 [010] 692184.130691: funcgraph_exit:       + 56.475 us  |  }
+     hello.1.out-987566 [010] 692184.130691: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130691: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130691: sys_exit_mmap:        0x76aec6628000
+     hello.1.out-987566 [010] 692184.130692: funcgraph_exit:         0.610 us   |    }
+     hello.1.out-987566 [010] 692184.130692: funcgraph_exit:         1.244 us   |  }
+     hello.1.out-987566 [010] 692184.130692: funcgraph_entry:        0.313 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130694: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130694: sys_enter_mmap:       addr: 0x76aec67b0000, len: 0x0004f000, prot: 0x00000001, flags: 0x00000812, fd: 0x00000003, off: 0x001b0000
+     hello.1.out-987566 [010] 692184.130694: funcgraph_exit:         0.660 us   |  }
+     hello.1.out-987566 [010] 692184.130694: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130695: funcgraph_entry:      + 20.475 us  |    __x64_sys_mmap();
+     hello.1.out-987566 [010] 692184.130716: funcgraph_exit:       + 21.066 us  |  }
+     hello.1.out-987566 [010] 692184.130716: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130716: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130716: sys_exit_mmap:        0x76aec67b0000
+     hello.1.out-987566 [010] 692184.130717: funcgraph_exit:         0.599 us   |    }
+     hello.1.out-987566 [010] 692184.130717: funcgraph_exit:         1.216 us   |  }
+     hello.1.out-987566 [010] 692184.130717: funcgraph_entry:        0.298 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130718: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130719: sys_enter_mmap:       addr: 0x76aec67ff000, len: 0x00006000, prot: 0x00000003, flags: 0x00000812, fd: 0x00000003, off: 0x001fe000
+     hello.1.out-987566 [010] 692184.130719: funcgraph_exit:         0.612 us   |  }
+     hello.1.out-987566 [010] 692184.130719: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130719: funcgraph_entry:      + 27.197 us  |    __x64_sys_mmap();
+     hello.1.out-987566 [010] 692184.130747: funcgraph_exit:       + 27.781 us  |  }
+     hello.1.out-987566 [010] 692184.130748: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130748: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130748: sys_exit_mmap:        0x76aec67ff000
+     hello.1.out-987566 [010] 692184.130749: funcgraph_exit:         0.597 us   |    }
+     hello.1.out-987566 [010] 692184.130749: funcgraph_exit:         1.252 us   |  }
+     hello.1.out-987566 [010] 692184.130749: funcgraph_entry:        0.302 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130751: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130751: funcgraph_entry:        0.281 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130752: funcgraph_entry:        0.321 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130753: funcgraph_entry:        0.294 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130753: funcgraph_exit:         2.294 us   |  }
+     hello.1.out-987566 [010] 692184.130754: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130754: funcgraph_entry:      + 11.722 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130766: funcgraph_entry:        0.305 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130767: funcgraph_entry:        0.298 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130767: funcgraph_entry:        0.377 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130768: funcgraph_entry:        0.279 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130769: funcgraph_exit:       + 14.920 us  |  }
+     hello.1.out-987566 [010] 692184.130769: funcgraph_entry:        0.282 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130770: funcgraph_entry:        0.303 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130770: funcgraph_entry:        0.283 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130771: funcgraph_entry:        0.266 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130772: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130772: sys_enter_mmap:       addr: 0x76aec6805000, len: 0x0000cd90, prot: 0x00000003, flags: 0x00000032, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-987566 [010] 692184.130772: funcgraph_exit:         0.611 us   |  }
+     hello.1.out-987566 [010] 692184.130773: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130773: funcgraph_entry:      + 16.496 us  |    __x64_sys_mmap();
+     hello.1.out-987566 [010] 692184.130790: funcgraph_exit:       + 17.154 us  |  }
+     hello.1.out-987566 [010] 692184.130790: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130791: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130791: sys_exit_mmap:        0x76aec6805000
+     hello.1.out-987566 [010] 692184.130791: funcgraph_exit:         0.597 us   |    }
+     hello.1.out-987566 [010] 692184.130792: funcgraph_exit:         1.274 us   |  }
+     hello.1.out-987566 [010] 692184.130792: funcgraph_entry:        0.298 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130794: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130794: funcgraph_entry:        0.352 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130795: funcgraph_entry:        0.300 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130795: funcgraph_entry:        0.277 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130796: funcgraph_exit:         2.134 us   |  }
+     hello.1.out-987566 [010] 692184.130796: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130797: funcgraph_entry:        8.132 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130805: funcgraph_entry:        0.298 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130806: funcgraph_entry:        0.349 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130806: funcgraph_entry:        0.359 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130807: funcgraph_entry:        0.279 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130807: funcgraph_exit:       + 11.154 us  |  }
+     hello.1.out-987566 [010] 692184.130808: funcgraph_entry:        0.282 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130808: funcgraph_entry:        0.308 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130809: funcgraph_entry:        0.282 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130809: funcgraph_entry:        0.278 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130812: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130812: funcgraph_entry:        0.284 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130813: funcgraph_entry:        0.300 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130814: funcgraph_entry:        0.278 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130814: funcgraph_exit:         2.019 us   |  }
+     hello.1.out-987566 [010] 692184.130814: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130815: funcgraph_entry:        8.869 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130824: funcgraph_entry:        0.320 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130825: funcgraph_entry:        0.316 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130825: funcgraph_entry:        0.404 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130826: funcgraph_entry:        0.297 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130826: funcgraph_exit:       + 12.022 us  |  }
+     hello.1.out-987566 [010] 692184.130827: funcgraph_entry:        0.289 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130827: funcgraph_entry:        0.300 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130828: funcgraph_entry:        0.278 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130828: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130831: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130831: funcgraph_entry:        0.730 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130832: funcgraph_entry:        0.305 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130833: funcgraph_entry:        0.285 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130833: funcgraph_exit:         2.552 us   |  }
+     hello.1.out-987566 [010] 692184.130833: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130834: funcgraph_entry:      + 14.033 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130848: funcgraph_entry:        0.292 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130849: funcgraph_entry:        0.288 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130849: funcgraph_entry:        0.395 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130850: funcgraph_entry:        0.279 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130850: funcgraph_exit:       + 17.033 us  |  }
+     hello.1.out-987566 [010] 692184.130851: funcgraph_entry:        0.291 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130851: funcgraph_entry:        0.307 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130852: funcgraph_entry:        0.285 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130853: funcgraph_entry:        0.273 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130854: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130854: sys_enter_close:      fd: 0x00000003
+     hello.1.out-987566 [010] 692184.130855: funcgraph_exit:         0.610 us   |  }
+     hello.1.out-987566 [010] 692184.130855: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130855: funcgraph_entry:        1.036 us   |    __x64_sys_close();
+     hello.1.out-987566 [010] 692184.130857: funcgraph_exit:         1.624 us   |  }
+     hello.1.out-987566 [010] 692184.130857: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130857: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130857: sys_exit_close:       0x0
+     hello.1.out-987566 [010] 692184.130858: funcgraph_exit:         0.523 us   |    }
+     hello.1.out-987566 [010] 692184.130858: funcgraph_exit:         1.071 us   |  }
+     hello.1.out-987566 [010] 692184.130858: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130860: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130860: funcgraph_entry:        0.289 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130861: funcgraph_entry:        0.296 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130862: funcgraph_entry:        0.288 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130862: funcgraph_exit:         2.037 us   |  }
+     hello.1.out-987566 [010] 692184.130862: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130863: funcgraph_entry:        6.698 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130870: funcgraph_entry:        0.282 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130870: funcgraph_entry:        0.286 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130871: funcgraph_entry:        0.362 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130871: funcgraph_entry:        0.275 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130872: funcgraph_exit:         9.632 us   |  }
+     hello.1.out-987566 [010] 692184.130872: funcgraph_entry:        0.281 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130873: funcgraph_entry:        0.299 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130874: funcgraph_entry:        0.297 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130874: funcgraph_entry:        0.273 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130885: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130885: sys_enter_mmap:       addr: 0x00000000, len: 0x00003000, prot: 0x00000003, flags: 0x00000022, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-987566 [010] 692184.130885: funcgraph_exit:         0.706 us   |  }
+     hello.1.out-987566 [010] 692184.130886: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130886: funcgraph_entry:        9.846 us   |    __x64_sys_mmap();
+     hello.1.out-987566 [010] 692184.130896: funcgraph_exit:       + 10.558 us  |  }
+     hello.1.out-987566 [010] 692184.130896: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130897: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130897: sys_exit_mmap:        0x76aec65fd000
+     hello.1.out-987566 [010] 692184.130897: funcgraph_exit:         0.608 us   |    }
+     hello.1.out-987566 [010] 692184.130898: funcgraph_exit:         1.262 us   |  }
+     hello.1.out-987566 [010] 692184.130898: funcgraph_entry:        0.348 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130900: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130900: funcgraph_entry:        0.309 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130901: funcgraph_entry:        0.309 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130902: funcgraph_entry:        0.282 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130902: funcgraph_exit:         2.330 us   |  }
+     hello.1.out-987566 [010] 692184.130903: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130903: funcgraph_entry:      + 12.765 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130916: funcgraph_entry:        0.339 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130917: funcgraph_entry:        0.298 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130917: funcgraph_entry:        0.439 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130918: funcgraph_entry:        0.283 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130919: funcgraph_exit:       + 15.948 us  |  }
+     hello.1.out-987566 [010] 692184.130919: funcgraph_entry:        0.282 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130919: funcgraph_entry:        0.310 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130920: funcgraph_entry:        0.664 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130921: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130923: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130923: funcgraph_entry:        0.291 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130924: funcgraph_entry:        0.297 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130924: funcgraph_entry:        0.297 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130925: funcgraph_exit:         2.033 us   |  }
+     hello.1.out-987566 [010] 692184.130925: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130925: funcgraph_entry:        6.234 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130932: funcgraph_entry:        0.285 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130933: funcgraph_entry:        0.279 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130933: funcgraph_entry:        0.427 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130934: funcgraph_entry:        0.290 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130934: funcgraph_exit:         9.275 us   |  }
+     hello.1.out-987566 [010] 692184.130935: funcgraph_entry:        0.292 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130935: funcgraph_entry:        0.298 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130936: funcgraph_entry:        0.283 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130936: funcgraph_entry:        0.285 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130938: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130938: sys_enter_arch_prctl: option: 0x00001002, arg2: 0x76aec65fd740
+     hello.1.out-987566 [010] 692184.130938: funcgraph_exit:         0.772 us   |  }
+     hello.1.out-987566 [010] 692184.130939: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130939: funcgraph_entry:        0.534 us   |    __x64_sys_arch_prctl();
+     hello.1.out-987566 [010] 692184.130940: funcgraph_exit:         1.531 us   |  }
+     hello.1.out-987566 [010] 692184.130940: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130941: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130941: sys_exit_arch_prctl:  0x0
+     hello.1.out-987566 [010] 692184.130941: funcgraph_exit:         0.721 us   |    }
+     hello.1.out-987566 [010] 692184.130942: funcgraph_exit:         1.268 us   |  }
+     hello.1.out-987566 [010] 692184.130942: funcgraph_entry:        0.271 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130943: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130943: sys_enter_set_tid_address: tidptr: 0x76aec65fda10
+     hello.1.out-987566 [010] 692184.130943: funcgraph_exit:         0.746 us   |  }
+     hello.1.out-987566 [010] 692184.130944: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130944: funcgraph_entry:        1.088 us   |    __x64_sys_set_tid_address();
+     hello.1.out-987566 [010] 692184.130946: funcgraph_exit:         2.021 us   |  }
+     hello.1.out-987566 [010] 692184.130946: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130946: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130947: sys_exit_set_tid_address: 0xf11ae
+     hello.1.out-987566 [010] 692184.130947: funcgraph_exit:         0.644 us   |    }
+     hello.1.out-987566 [010] 692184.130947: funcgraph_exit:         1.190 us   |  }
+     hello.1.out-987566 [010] 692184.130948: funcgraph_entry:        0.287 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130948: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130949: sys_enter_set_robust_list: head: 0x76aec65fda20, len: 0x00000018
+     hello.1.out-987566 [010] 692184.130949: funcgraph_exit:         0.727 us   |  }
+     hello.1.out-987566 [010] 692184.130949: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130950: funcgraph_entry:        0.312 us   |    __x64_sys_set_robust_list();
+     hello.1.out-987566 [010] 692184.130951: funcgraph_exit:         1.137 us   |  }
+     hello.1.out-987566 [010] 692184.130951: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130951: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130951: sys_exit_set_robust_list: 0x0
+     hello.1.out-987566 [010] 692184.130952: funcgraph_exit:         0.792 us   |    }
+     hello.1.out-987566 [010] 692184.130952: funcgraph_exit:         1.332 us   |  }
+     hello.1.out-987566 [010] 692184.130952: funcgraph_entry:        0.278 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130953: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.130954: sys_enter_rseq:       rseq: 0x76aec65fe060, rseq_len: 0x00000020, flags: 0x00000000, sig: 0x53053053
+     hello.1.out-987566 [010] 692184.130954: funcgraph_exit:         0.949 us   |  }
+     hello.1.out-987566 [010] 692184.130955: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.130955: funcgraph_entry:        0.561 us   |    __x64_sys_rseq();
+     hello.1.out-987566 [010] 692184.130956: funcgraph_exit:         1.464 us   |  }
+     hello.1.out-987566 [010] 692184.130956: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.130957: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.130957: sys_exit_rseq:        0x0
+     hello.1.out-987566 [010] 692184.130957: funcgraph_exit:         0.726 us   |    }
+     hello.1.out-987566 [010] 692184.130958: funcgraph_exit:         1.274 us   |  }
+     hello.1.out-987566 [010] 692184.130958: funcgraph_entry:        0.286 us   |  mem_cgroup_handle_over_high();
+     hello.1.out-987566 [010] 692184.130959: funcgraph_entry:        0.281 us   |  blkcg_maybe_throttle_current();
+     hello.1.out-987566 [010] 692184.130959: funcgraph_entry:                   |  __rseq_handle_notify_resume() {
+     hello.1.out-987566 [010] 692184.130959: funcgraph_entry:        0.595 us   |    rseq_ip_fixup();
+     hello.1.out-987566 [010] 692184.130960: funcgraph_entry:        0.360 us   |    rseq_update_cpu_node_id();
+     hello.1.out-987566 [010] 692184.130961: funcgraph_exit:         1.841 us   |  }
+     hello.1.out-987566 [010] 692184.130961: funcgraph_entry:        0.275 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130964: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130964: funcgraph_entry:        0.285 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130964: funcgraph_entry:        0.297 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130965: funcgraph_entry:        0.281 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130966: funcgraph_exit:         2.124 us   |  }
+     hello.1.out-987566 [010] 692184.130966: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130966: funcgraph_entry:        8.189 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130975: funcgraph_entry:        0.291 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130976: funcgraph_entry:        0.301 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130976: funcgraph_entry:        0.491 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130977: funcgraph_entry:        0.309 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130978: funcgraph_exit:       + 11.664 us  |  }
+     hello.1.out-987566 [010] 692184.130978: funcgraph_entry:        0.281 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130978: funcgraph_entry:        0.303 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130979: funcgraph_entry:        0.281 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130980: funcgraph_entry:        0.268 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.130983: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.130983: funcgraph_entry:        0.294 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130984: funcgraph_entry:        0.303 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.130984: funcgraph_entry:        0.286 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130985: funcgraph_exit:         2.043 us   |  }
+     hello.1.out-987566 [010] 692184.130985: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.130985: funcgraph_entry:        8.865 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.130995: funcgraph_entry:        0.326 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130995: funcgraph_entry:        0.318 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.130996: funcgraph_entry:        0.441 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.130997: funcgraph_entry:        0.290 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130997: funcgraph_exit:       + 12.095 us  |  }
+     hello.1.out-987566 [010] 692184.130997: funcgraph_entry:        0.283 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.130998: funcgraph_entry:        0.303 us   |  up_read();
+     hello.1.out-987566 [010] 692184.130999: funcgraph_entry:        0.285 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.130999: funcgraph_entry:        0.271 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131004: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131004: funcgraph_entry:        0.282 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131005: funcgraph_entry:        0.296 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131005: funcgraph_entry:        0.283 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131006: funcgraph_exit:         2.052 us   |  }
+     hello.1.out-987566 [010] 692184.131006: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131006: funcgraph_entry:        8.730 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131015: funcgraph_entry:        0.320 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131016: funcgraph_entry:        0.316 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131017: funcgraph_entry:        0.401 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131017: funcgraph_entry:        0.296 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131018: funcgraph_exit:       + 11.901 us  |  }
+     hello.1.out-987566 [010] 692184.131018: funcgraph_entry:        0.289 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131019: funcgraph_entry:        0.312 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131019: funcgraph_entry:        0.278 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131020: funcgraph_entry:        0.268 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131026: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131026: funcgraph_entry:        0.294 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131027: funcgraph_entry:        0.299 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131028: funcgraph_entry:        0.281 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131028: funcgraph_exit:         2.147 us   |  }
+     hello.1.out-987566 [010] 692184.131029: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131029: funcgraph_entry:        8.458 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131038: funcgraph_entry:        0.323 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131038: funcgraph_entry:        0.319 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131039: funcgraph_entry:        0.407 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131040: funcgraph_entry:        0.288 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131040: funcgraph_exit:       + 11.651 us  |  }
+     hello.1.out-987566 [010] 692184.131041: funcgraph_entry:        0.273 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131041: funcgraph_entry:        0.295 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131042: funcgraph_entry:        0.287 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131042: funcgraph_entry:        0.265 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131047: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131047: funcgraph_entry:        0.284 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131048: funcgraph_entry:        0.296 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131049: funcgraph_entry:        0.573 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131049: funcgraph_exit:         2.375 us   |  }
+     hello.1.out-987566 [010] 692184.131049: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131050: funcgraph_entry:      + 10.886 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131061: funcgraph_entry:        0.342 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131062: funcgraph_entry:        0.281 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131062: funcgraph_entry:        0.364 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131063: funcgraph_entry:        0.277 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131063: funcgraph_exit:       + 13.951 us  |  }
+     hello.1.out-987566 [010] 692184.131064: funcgraph_entry:        0.287 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131064: funcgraph_entry:        0.300 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131065: funcgraph_entry:        0.298 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131065: funcgraph_entry:        0.273 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131098: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131098: funcgraph_entry:        0.344 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131099: funcgraph_entry:        0.354 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131099: funcgraph_entry:        0.337 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131100: funcgraph_exit:         2.590 us   |  }
+     hello.1.out-987566 [010] 692184.131101: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131101: funcgraph_entry:      + 11.499 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131113: funcgraph_entry:        0.363 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131113: funcgraph_entry:        0.285 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131114: funcgraph_entry:        0.469 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131115: funcgraph_entry:        0.274 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131115: funcgraph_exit:       + 14.737 us  |  }
+     hello.1.out-987566 [010] 692184.131115: funcgraph_entry:        0.276 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131116: funcgraph_entry:        0.308 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131117: funcgraph_entry:        0.271 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131117: funcgraph_entry:        0.258 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131119: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131119: funcgraph_entry:        0.278 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131120: funcgraph_entry:        0.307 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131121: funcgraph_entry:        0.281 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131121: funcgraph_exit:         2.059 us   |  }
+     hello.1.out-987566 [010] 692184.131121: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131122: funcgraph_entry:        9.104 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131131: funcgraph_entry:        0.299 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131132: funcgraph_entry:        0.285 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131132: funcgraph_entry:        0.353 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131133: funcgraph_entry:        0.276 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131134: funcgraph_exit:       + 12.123 us  |  }
+     hello.1.out-987566 [010] 692184.131134: funcgraph_entry:        0.302 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131135: funcgraph_entry:        0.299 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131135: funcgraph_entry:        0.282 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131136: funcgraph_entry:        0.266 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131138: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131138: funcgraph_entry:        0.345 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131139: funcgraph_entry:        0.349 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131140: funcgraph_entry:        0.338 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131141: funcgraph_exit:         2.544 us   |  }
+     hello.1.out-987566 [010] 692184.131141: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131141: funcgraph_entry:      + 10.736 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131152: funcgraph_entry:        0.286 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131153: funcgraph_entry:        0.270 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131154: funcgraph_entry:        0.379 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131154: funcgraph_entry:        0.278 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131155: funcgraph_exit:       + 13.748 us  |  }
+     hello.1.out-987566 [010] 692184.131155: funcgraph_entry:        0.272 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131156: funcgraph_entry:        0.310 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131156: funcgraph_entry:        0.274 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131157: funcgraph_entry:        0.274 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131161: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131161: funcgraph_entry:        0.370 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131162: funcgraph_entry:        0.355 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131163: funcgraph_entry:        0.336 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131163: funcgraph_exit:         3.229 us   |  }
+     hello.1.out-987566 [010] 692184.131164: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131164: funcgraph_entry:      + 10.579 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131175: funcgraph_entry:        0.299 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131175: funcgraph_entry:        0.284 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131176: funcgraph_entry:        0.366 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131177: funcgraph_entry:        0.264 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131177: funcgraph_exit:       + 13.606 us  |  }
+     hello.1.out-987566 [010] 692184.131178: funcgraph_entry:        0.282 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131178: funcgraph_entry:        0.298 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131179: funcgraph_entry:        0.286 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131179: funcgraph_entry:        0.274 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131183: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131184: funcgraph_entry:        0.341 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131185: funcgraph_entry:        0.350 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131185: funcgraph_entry:        0.337 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131186: funcgraph_exit:         2.509 us   |  }
+     hello.1.out-987566 [010] 692184.131186: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131187: funcgraph_entry:      + 11.226 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131198: funcgraph_entry:        0.304 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131199: funcgraph_entry:        0.286 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131199: funcgraph_entry:        0.430 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131200: funcgraph_entry:        0.285 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131201: funcgraph_exit:       + 14.366 us  |  }
+     hello.1.out-987566 [010] 692184.131201: funcgraph_entry:        0.278 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131201: funcgraph_entry:        0.297 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131202: funcgraph_entry:        0.279 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131203: funcgraph_entry:        0.262 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131208: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131208: sys_enter_mprotect:   start: 0x76aec67ff000, len: 0x00004000, prot: 0x00000001
+     hello.1.out-987566 [010] 692184.131209: funcgraph_exit:         0.857 us   |  }
+     hello.1.out-987566 [010] 692184.131209: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131209: funcgraph_entry:      + 25.325 us  |    __x64_sys_mprotect();
+     hello.1.out-987566 [010] 692184.131235: funcgraph_exit:       + 26.061 us  |  }
+     hello.1.out-987566 [010] 692184.131236: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.131236: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.131236: sys_exit_mprotect:    0x0
+     hello.1.out-987566 [010] 692184.131237: funcgraph_exit:         0.719 us   |    }
+     hello.1.out-987566 [010] 692184.131237: funcgraph_exit:         1.397 us   |  }
+     hello.1.out-987566 [010] 692184.131237: funcgraph_entry:        0.309 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131242: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131243: sys_enter_mprotect:   start: 0x62165cc0a000, len: 0x00001000, prot: 0x00000001
+     hello.1.out-987566 [010] 692184.131243: funcgraph_exit:         0.729 us   |  }
+     hello.1.out-987566 [010] 692184.131243: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131244: funcgraph_entry:      + 13.562 us  |    __x64_sys_mprotect();
+     hello.1.out-987566 [010] 692184.131258: funcgraph_exit:       + 14.243 us  |  }
+     hello.1.out-987566 [010] 692184.131258: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.131258: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.131259: sys_exit_mprotect:    0x0
+     hello.1.out-987566 [010] 692184.131259: funcgraph_exit:         0.634 us   |    }
+     hello.1.out-987566 [010] 692184.131259: funcgraph_exit:         1.304 us   |  }
+     hello.1.out-987566 [010] 692184.131260: funcgraph_entry:        0.313 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131267: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131267: sys_enter_mprotect:   start: 0x76aec6864000, len: 0x00002000, prot: 0x00000001
+     hello.1.out-987566 [010] 692184.131267: funcgraph_exit:         0.723 us   |  }
+     hello.1.out-987566 [010] 692184.131268: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131268: funcgraph_entry:      + 15.932 us  |    __x64_sys_mprotect();
+     hello.1.out-987566 [010] 692184.131284: funcgraph_exit:       + 16.576 us  |  }
+     hello.1.out-987566 [010] 692184.131285: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.131285: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.131285: sys_exit_mprotect:    0x0
+     hello.1.out-987566 [010] 692184.131285: funcgraph_exit:         0.609 us   |    }
+     hello.1.out-987566 [010] 692184.131286: funcgraph_exit:         1.250 us   |  }
+     hello.1.out-987566 [010] 692184.131286: funcgraph_entry:        0.301 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131289: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131289: funcgraph_entry:        0.345 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131290: funcgraph_entry:        0.351 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131291: funcgraph_entry:        0.346 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131291: funcgraph_exit:         2.680 us   |  }
+     hello.1.out-987566 [010] 692184.131292: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131292: funcgraph_entry:      + 10.839 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131304: funcgraph_entry:        0.304 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131304: funcgraph_entry:        0.317 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131305: funcgraph_entry:        0.399 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131306: funcgraph_entry:        0.302 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131306: funcgraph_exit:       + 14.708 us  |  }
+     hello.1.out-987566 [010] 692184.131307: funcgraph_entry:        0.288 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131307: funcgraph_entry:        0.307 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131308: funcgraph_entry:        0.288 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131308: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131311: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131311: funcgraph_entry:        0.341 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131312: funcgraph_entry:        0.350 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131313: funcgraph_entry:        0.337 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131313: funcgraph_exit:         2.537 us   |  }
+     hello.1.out-987566 [010] 692184.131314: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131314: funcgraph_entry:      + 10.537 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131325: funcgraph_entry:        0.308 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131325: funcgraph_entry:        0.279 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131326: funcgraph_entry:        0.411 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131327: funcgraph_entry:        0.273 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131327: funcgraph_exit:       + 13.709 us  |  }
+     hello.1.out-987566 [010] 692184.131328: funcgraph_entry:        0.296 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131328: funcgraph_entry:        0.305 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131329: funcgraph_entry:        0.279 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131329: funcgraph_entry:        0.272 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131331: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131331: funcgraph_entry:        0.272 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131332: funcgraph_entry:        0.331 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131333: funcgraph_entry:        0.281 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131333: funcgraph_exit:         2.219 us   |  }
+     hello.1.out-987566 [010] 692184.131334: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131334: funcgraph_entry:        6.015 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131340: funcgraph_entry:        0.279 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131341: funcgraph_entry:        0.278 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131342: funcgraph_entry:        0.362 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131342: funcgraph_entry:        0.277 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131343: funcgraph_exit:         8.978 us   |  }
+     hello.1.out-987566 [010] 692184.131343: funcgraph_entry:        0.277 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131344: funcgraph_entry:        0.295 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131344: funcgraph_entry:        0.276 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131345: funcgraph_entry:        0.267 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131347: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131347: funcgraph_entry:        0.277 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131347: funcgraph_entry:        0.296 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131348: funcgraph_entry:        0.282 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131349: funcgraph_exit:         2.081 us   |  }
+     hello.1.out-987566 [010] 692184.131349: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131349: funcgraph_entry:        6.047 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131356: funcgraph_entry:        0.285 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131356: funcgraph_entry:        0.293 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131357: funcgraph_entry:        0.368 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131357: funcgraph_entry:        0.280 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131358: funcgraph_exit:         9.098 us   |  }
+     hello.1.out-987566 [010] 692184.131358: funcgraph_entry:        0.294 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131359: funcgraph_entry:        0.303 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131359: funcgraph_entry:        0.285 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131360: funcgraph_entry:        0.270 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131362: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131362: funcgraph_entry:        0.340 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131363: funcgraph_entry:        0.348 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131364: funcgraph_entry:        0.669 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131365: funcgraph_exit:         2.875 us   |  }
+     hello.1.out-987566 [010] 692184.131365: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131366: funcgraph_entry:      + 10.662 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131377: funcgraph_entry:        0.292 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131377: funcgraph_entry:        0.333 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131378: funcgraph_entry:        0.404 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131379: funcgraph_entry:        0.287 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131379: funcgraph_exit:       + 13.788 us  |  }
+     hello.1.out-987566 [010] 692184.131379: funcgraph_entry:        0.271 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131380: funcgraph_entry:        0.295 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131380: funcgraph_entry:        0.281 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131381: funcgraph_entry:        0.277 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131382: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131382: sys_enter_prlimit64:  pid: 0x00000000, resource: 0x00000003, new_rlim: 0x00000000, old_rlim: 0x7ffccc250ca0
+     hello.1.out-987566 [010] 692184.131383: funcgraph_exit:         0.773 us   |  }
+     hello.1.out-987566 [010] 692184.131383: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131384: funcgraph_entry:        1.284 us   |    __x64_sys_prlimit64();
+     hello.1.out-987566 [010] 692184.131385: funcgraph_exit:         2.313 us   |  }
+     hello.1.out-987566 [010] 692184.131386: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.131386: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.131386: sys_exit_prlimit64:   0x0
+     hello.1.out-987566 [010] 692184.131387: funcgraph_exit:         0.783 us   |    }
+     hello.1.out-987566 [010] 692184.131387: funcgraph_exit:         1.336 us   |  }
+     hello.1.out-987566 [010] 692184.131387: funcgraph_entry:        0.272 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131389: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131389: funcgraph_entry:        0.290 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131390: funcgraph_entry:        0.300 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131391: funcgraph_entry:        0.324 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131391: funcgraph_exit:         2.142 us   |  }
+     hello.1.out-987566 [010] 692184.131391: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131392: funcgraph_entry:        6.314 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131398: funcgraph_entry:        0.284 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131399: funcgraph_entry:        0.283 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131400: funcgraph_entry:        0.344 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131400: funcgraph_entry:        0.277 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131401: funcgraph_exit:         9.257 us   |  }
+     hello.1.out-987566 [010] 692184.131401: funcgraph_entry:        0.275 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131402: funcgraph_entry:        0.305 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131402: funcgraph_entry:        0.280 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131403: funcgraph_entry:        0.281 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131405: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131405: funcgraph_entry:        0.339 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131406: funcgraph_entry:        0.353 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131407: funcgraph_entry:        0.339 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131407: funcgraph_exit:         2.545 us   |  }
+     hello.1.out-987566 [010] 692184.131408: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131408: funcgraph_entry:      + 11.358 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131420: funcgraph_entry:        0.299 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131420: funcgraph_entry:        0.290 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131421: funcgraph_entry:        0.382 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131421: funcgraph_entry:        0.288 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131422: funcgraph_exit:       + 14.412 us  |  }
+     hello.1.out-987566 [010] 692184.131422: funcgraph_entry:        0.299 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131423: funcgraph_entry:        0.300 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131423: funcgraph_entry:        0.279 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131424: funcgraph_entry:        0.268 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131426: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131427: funcgraph_entry:        0.342 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131427: funcgraph_entry:        0.349 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131428: funcgraph_entry:        0.341 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131429: funcgraph_exit:         2.510 us   |  }
+     hello.1.out-987566 [010] 692184.131429: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131429: funcgraph_entry:        9.106 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131439: funcgraph_entry:        0.286 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131439: funcgraph_entry:        0.280 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131440: funcgraph_entry:        0.405 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131441: funcgraph_entry:        0.284 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131444: funcgraph_exit:       + 14.643 us  |  }
+     hello.1.out-987566 [010] 692184.131444: funcgraph_entry:        0.280 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131445: funcgraph_entry:        0.300 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131445: funcgraph_entry:        0.278 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131446: funcgraph_entry:        0.285 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131448: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131448: funcgraph_entry:        0.286 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131449: funcgraph_entry:        0.302 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131450: funcgraph_entry:        0.292 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131450: funcgraph_exit:         2.087 us   |  }
+     hello.1.out-987566 [010] 692184.131450: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131451: funcgraph_entry:        1.605 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131453: funcgraph_entry:        0.279 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131453: funcgraph_entry:        0.284 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131454: funcgraph_entry:        0.432 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131454: funcgraph_entry:        0.275 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131455: funcgraph_exit:         4.633 us   |  }
+     hello.1.out-987566 [010] 692184.131455: funcgraph_entry:        0.282 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131456: funcgraph_entry:        0.298 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131456: funcgraph_entry:        0.281 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131457: funcgraph_entry:        0.290 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131458: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131459: sys_enter_munmap:     addr: 0x76aec6814000, len: 0x00011d07
+     hello.1.out-987566 [010] 692184.131459: funcgraph_exit:         0.795 us   |  }
+     hello.1.out-987566 [010] 692184.131459: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131460: funcgraph_entry:      + 46.152 us  |    __x64_sys_munmap();
+     hello.1.out-987566 [010] 692184.131506: funcgraph_exit:       + 46.888 us  |  }
+     hello.1.out-987566 [010] 692184.131507: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.131507: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.131507: sys_exit_munmap:      0x0
+     hello.1.out-987566 [010] 692184.131508: funcgraph_exit:         0.705 us   |    }
+     hello.1.out-987566 [010] 692184.131508: funcgraph_exit:         1.314 us   |  }
+     hello.1.out-987566 [010] 692184.131508: funcgraph_entry:                   |  task_work_run() {
+     hello.1.out-987566 [010] 692184.131509: funcgraph_entry:        0.376 us   |    _raw_spin_lock_irq();
+     hello.1.out-987566 [010] 692184.131509: funcgraph_entry:        0.318 us   |    _raw_spin_unlock_irq();
+     hello.1.out-987566 [010] 692184.131510: funcgraph_entry:        6.333 us   |    ____fput();
+     hello.1.out-987566 [010] 692184.131517: funcgraph_entry:        0.331 us   |    __cond_resched();
+     hello.1.out-987566 [010] 692184.131517: funcgraph_exit:         8.995 us   |  }
+     hello.1.out-987566 [010] 692184.131518: funcgraph_entry:        0.333 us   |  mem_cgroup_handle_over_high();
+     hello.1.out-987566 [010] 692184.131518: funcgraph_entry:        0.309 us   |  blkcg_maybe_throttle_current();
+     hello.1.out-987566 [010] 692184.131519: funcgraph_entry:                   |  __rseq_handle_notify_resume() {
+     hello.1.out-987566 [010] 692184.131519: funcgraph_entry:        0.466 us   |    rseq_ip_fixup();
+     hello.1.out-987566 [010] 692184.131520: funcgraph_entry:        0.322 us   |    rseq_update_cpu_node_id();
+     hello.1.out-987566 [010] 692184.131520: funcgraph_exit:         1.689 us   |  }
+     hello.1.out-987566 [010] 692184.131521: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131524: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131524: funcgraph_entry:        0.341 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131525: funcgraph_entry:        0.346 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131526: funcgraph_entry:        0.338 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131527: funcgraph_exit:         2.537 us   |  }
+     hello.1.out-987566 [010] 692184.131527: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131527: funcgraph_entry:      + 10.746 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131538: funcgraph_entry:        0.287 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131539: funcgraph_entry:        0.297 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131539: funcgraph_entry:        0.398 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131540: funcgraph_entry:        0.270 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131541: funcgraph_exit:       + 13.774 us  |  }
+     hello.1.out-987566 [010] 692184.131541: funcgraph_entry:        0.288 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131542: funcgraph_entry:        0.300 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131542: funcgraph_entry:        0.283 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131543: funcgraph_entry:        0.280 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131546: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131546: funcgraph_entry:        0.346 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131547: funcgraph_entry:        0.681 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131548: funcgraph_entry:        0.335 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131548: funcgraph_exit:         2.773 us   |  }
+     hello.1.out-987566 [010] 692184.131549: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131549: funcgraph_entry:        3.933 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131553: funcgraph_entry:        0.301 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131554: funcgraph_entry:        0.308 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131554: funcgraph_entry:        0.409 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131555: funcgraph_entry:        0.318 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131556: funcgraph_exit:         7.022 us   |  }
+     hello.1.out-987566 [010] 692184.131556: funcgraph_entry:        0.277 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131556: funcgraph_entry:        0.297 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131557: funcgraph_entry:        0.280 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131558: funcgraph_entry:        0.268 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131560: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131560: funcgraph_entry:        0.343 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131561: funcgraph_entry:        0.347 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131562: funcgraph_entry:        0.338 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131562: funcgraph_exit:         2.532 us   |  }
+     hello.1.out-987566 [010] 692184.131563: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131563: funcgraph_entry:      + 10.857 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131574: funcgraph_entry:        0.298 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131575: funcgraph_entry:        0.281 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131575: funcgraph_entry:        0.427 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131576: funcgraph_entry:        0.280 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131577: funcgraph_exit:       + 13.935 us  |  }
+     hello.1.out-987566 [010] 692184.131577: funcgraph_entry:        0.280 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131577: funcgraph_entry:        0.309 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131578: funcgraph_entry:        0.280 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131579: funcgraph_entry:        0.287 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131582: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131583: funcgraph_entry:        0.344 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131583: funcgraph_entry:        0.351 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131584: funcgraph_entry:        0.340 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131585: funcgraph_exit:         2.518 us   |  }
+     hello.1.out-987566 [010] 692184.131585: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131585: funcgraph_entry:      + 10.664 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131596: funcgraph_entry:        0.300 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131597: funcgraph_entry:        0.290 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131598: funcgraph_entry:        0.361 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131598: funcgraph_entry:        0.275 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131599: funcgraph_exit:       + 13.659 us  |  }
+     hello.1.out-987566 [010] 692184.131599: funcgraph_entry:        0.295 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131600: funcgraph_entry:        0.301 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131600: funcgraph_entry:        0.280 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131601: funcgraph_entry:        0.264 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131603: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131604: funcgraph_entry:        0.279 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131604: funcgraph_entry:        0.329 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131605: funcgraph_entry:        0.290 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131606: funcgraph_exit:         2.133 us   |  }
+     hello.1.out-987566 [010] 692184.131606: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131606: funcgraph_entry:        3.451 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131610: funcgraph_entry:        0.276 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131611: funcgraph_entry:        0.283 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131611: funcgraph_entry:        0.424 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131612: funcgraph_entry:        0.277 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131612: funcgraph_exit:         6.479 us   |  }
+     hello.1.out-987566 [010] 692184.131613: funcgraph_entry:        0.277 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131613: funcgraph_entry:        0.301 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131614: funcgraph_entry:        0.269 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131615: funcgraph_entry:        0.819 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131617: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131617: funcgraph_entry:        0.285 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131618: funcgraph_entry:        0.335 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131619: funcgraph_entry:        0.285 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131619: funcgraph_exit:         2.188 us   |  }
+     hello.1.out-987566 [010] 692184.131620: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131620: funcgraph_entry:      + 10.585 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131631: funcgraph_entry:        0.281 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131631: funcgraph_entry:        0.278 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131632: funcgraph_entry:        0.467 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131633: funcgraph_entry:        0.275 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131633: funcgraph_exit:       + 13.628 us  |  }
+     hello.1.out-987566 [010] 692184.131633: funcgraph_entry:        0.279 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131634: funcgraph_entry:        0.305 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131635: funcgraph_entry:        0.287 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131635: funcgraph_entry:        0.314 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131638: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131638: funcgraph_entry:        0.346 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131639: funcgraph_entry:        0.345 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131640: funcgraph_entry:        0.341 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131640: funcgraph_exit:         2.595 us   |  }
+     hello.1.out-987566 [010] 692184.131641: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131641: funcgraph_entry:      + 42.885 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131684: funcgraph_entry:        0.313 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131685: funcgraph_entry:        0.306 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131686: funcgraph_entry:        0.384 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131686: funcgraph_entry:        0.294 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131687: funcgraph_exit:       + 46.137 us  |  }
+     hello.1.out-987566 [010] 692184.131687: funcgraph_entry:        0.289 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131688: funcgraph_entry:        0.306 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131688: funcgraph_entry:        0.276 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131689: funcgraph_entry:        0.282 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131693: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131693: funcgraph_entry:        0.340 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131694: funcgraph_entry:        0.349 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131695: funcgraph_entry:        0.345 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131695: funcgraph_exit:         2.528 us   |  }
+     hello.1.out-987566 [010] 692184.131696: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131696: funcgraph_entry:      + 10.557 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131707: funcgraph_entry:        0.298 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131707: funcgraph_entry:        0.283 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131708: funcgraph_entry:        0.476 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131709: funcgraph_entry:        0.283 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131709: funcgraph_exit:       + 13.676 us  |  }
+     hello.1.out-987566 [010] 692184.131710: funcgraph_entry:        0.287 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131710: funcgraph_entry:        0.313 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131711: funcgraph_entry:        0.276 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131711: funcgraph_entry:        0.277 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131713: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131713: sys_enter_newfstat:   fd: 0x00000001, statbuf: 0x7ffccc250bb0
+     hello.1.out-987566 [010] 692184.131713: funcgraph_exit:         0.622 us   |  }
+     hello.1.out-987566 [010] 692184.131714: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131714: funcgraph_entry:        3.177 us   |    __x64_sys_newfstat();
+     hello.1.out-987566 [010] 692184.131717: funcgraph_exit:         3.819 us   |  }
+     hello.1.out-987566 [010] 692184.131718: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.131718: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.131718: sys_exit_newfstat:    0x0
+     hello.1.out-987566 [010] 692184.131718: funcgraph_exit:         0.522 us   |    }
+     hello.1.out-987566 [010] 692184.131719: funcgraph_exit:         1.068 us   |  }
+     hello.1.out-987566 [010] 692184.131719: funcgraph_entry:        0.279 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131721: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131721: funcgraph_entry:        0.340 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131722: funcgraph_entry:        0.346 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131723: funcgraph_entry:        0.337 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131724: funcgraph_exit:         2.506 us   |  }
+     hello.1.out-987566 [010] 692184.131724: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131724: funcgraph_entry:      + 10.549 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131735: funcgraph_entry:        0.288 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131736: funcgraph_entry:        0.289 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131737: funcgraph_entry:        0.444 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131737: funcgraph_entry:        0.279 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131738: funcgraph_exit:       + 13.620 us  |  }
+     hello.1.out-987566 [010] 692184.131738: funcgraph_entry:        0.279 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131739: funcgraph_entry:        0.305 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131739: funcgraph_entry:        0.284 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131740: funcgraph_entry:        0.277 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131741: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131741: sys_enter_getrandom:  ubuf: 0x76aec680a178, len: 0x00000008, flags: 0x00000001
+     hello.1.out-987566 [010] 692184.131742: funcgraph_exit:         0.760 us   |  }
+     hello.1.out-987566 [010] 692184.131742: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131743: funcgraph_entry:        1.764 us   |    __x64_sys_getrandom();
+     hello.1.out-987566 [010] 692184.131745: funcgraph_exit:         2.700 us   |  }
+     hello.1.out-987566 [010] 692184.131745: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.131745: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.131746: sys_exit_getrandom:   0x8
+     hello.1.out-987566 [010] 692184.131746: funcgraph_exit:         0.992 us   |    }
+     hello.1.out-987566 [010] 692184.131747: funcgraph_exit:         1.540 us   |  }
+     hello.1.out-987566 [010] 692184.131747: funcgraph_entry:        0.308 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131750: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131750: sys_enter_brk:        brk: 0x00000000
+     hello.1.out-987566 [010] 692184.131751: funcgraph_exit:         0.672 us   |  }
+     hello.1.out-987566 [010] 692184.131751: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131751: funcgraph_entry:        0.592 us   |    __x64_sys_brk();
+     hello.1.out-987566 [010] 692184.131752: funcgraph_exit:         1.324 us   |  }
+     hello.1.out-987566 [010] 692184.131752: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.131753: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.131753: sys_exit_brk:         0x62168699f000
+     hello.1.out-987566 [010] 692184.131753: funcgraph_exit:         0.511 us   |    }
+     hello.1.out-987566 [010] 692184.131754: funcgraph_exit:         1.052 us   |  }
+     hello.1.out-987566 [010] 692184.131754: funcgraph_entry:        0.278 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131755: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131755: sys_enter_brk:        brk: 0x6216869c0000
+     hello.1.out-987566 [010] 692184.131755: funcgraph_exit:         0.589 us   |  }
+     hello.1.out-987566 [010] 692184.131756: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131756: funcgraph_entry:        7.984 us   |    __x64_sys_brk();
+     hello.1.out-987566 [010] 692184.131764: funcgraph_exit:         8.535 us   |  }
+     hello.1.out-987566 [010] 692184.131764: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.131765: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.131765: sys_exit_brk:         0x6216869c0000
+     hello.1.out-987566 [010] 692184.131765: funcgraph_exit:         0.549 us   |    }
+     hello.1.out-987566 [010] 692184.131766: funcgraph_exit:         1.131 us   |  }
+     hello.1.out-987566 [010] 692184.131766: funcgraph_entry:        0.285 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131768: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131768: funcgraph_entry:        0.287 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131769: funcgraph_entry:        0.303 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131769: funcgraph_entry:        0.288 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131770: funcgraph_exit:         2.088 us   |  }
+     hello.1.out-987566 [010] 692184.131770: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131771: funcgraph_entry:      + 15.995 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131787: funcgraph_entry:        0.307 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131788: funcgraph_entry:        0.307 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131788: funcgraph_entry:        0.380 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131789: funcgraph_entry:        0.299 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131789: funcgraph_exit:       + 19.109 us  |  }
+     hello.1.out-987566 [010] 692184.131790: funcgraph_entry:        0.277 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131790: funcgraph_entry:        0.305 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131791: funcgraph_entry:        0.281 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131791: funcgraph_entry:        0.268 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131794: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131795: sys_enter_write:      fd: 0x00000001, buf: 0x62168699f2a0, count: 0x0000001c
+     hello.1.out-987566 [010] 692184.131795: funcgraph_exit:         0.679 us   |  }
+     hello.1.out-987566 [010] 692184.131795: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131796: funcgraph_entry:      + 23.969 us  |    __x64_sys_write();
+     hello.1.out-987566 [010] 692184.131820: funcgraph_exit:       + 24.707 us  |  }
+     hello.1.out-987566 [010] 692184.131820: funcgraph_entry:                   |  syscall_exit_to_user_mode_prepare() {
+     hello.1.out-987566 [010] 692184.131821: funcgraph_entry:                   |    syscall_exit_work() {
+     hello.1.out-987566 [010] 692184.131821: sys_exit_write:       0x1c
+     hello.1.out-987566 [010] 692184.131821: funcgraph_exit:         0.607 us   |    }
+     hello.1.out-987566 [010] 692184.131821: funcgraph_exit:         1.236 us   |  }
+     hello.1.out-987566 [010] 692184.131822: funcgraph_entry:        0.302 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131827: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131827: funcgraph_entry:        0.352 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131828: funcgraph_entry:        0.362 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131829: funcgraph_entry:        0.335 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131830: funcgraph_exit:         3.041 us   |  }
+     hello.1.out-987566 [010] 692184.131830: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131831: funcgraph_entry:      + 10.858 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131842: funcgraph_entry:        0.294 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131842: funcgraph_entry:        0.292 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131843: funcgraph_entry:        0.393 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131844: funcgraph_entry:        0.273 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131844: funcgraph_exit:       + 13.913 us  |  }
+     hello.1.out-987566 [010] 692184.131845: funcgraph_entry:        0.300 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131845: funcgraph_entry:        0.299 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131846: funcgraph_entry:        0.282 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131846: funcgraph_entry:        0.271 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131849: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131850: funcgraph_entry:        0.284 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131850: funcgraph_entry:        0.340 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131851: funcgraph_entry:        0.286 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131852: funcgraph_exit:         2.258 us   |  }
+     hello.1.out-987566 [010] 692184.131852: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131852: funcgraph_entry:        8.267 us   |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131861: funcgraph_entry:        0.318 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131861: funcgraph_entry:        0.316 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131862: funcgraph_entry:        0.403 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131863: funcgraph_entry:        0.296 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131863: funcgraph_exit:       + 11.458 us  |  }
+     hello.1.out-987566 [010] 692184.131864: funcgraph_entry:        0.294 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131864: funcgraph_entry:        0.366 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131865: funcgraph_entry:        0.290 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131865: funcgraph_entry:        0.286 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131869: funcgraph_entry:                   |  lock_vma_under_rcu() {
+     hello.1.out-987566 [010] 692184.131869: funcgraph_entry:        0.351 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131870: funcgraph_entry:        0.346 us   |    down_read_trylock();
+     hello.1.out-987566 [010] 692184.131871: funcgraph_entry:        0.342 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131872: funcgraph_exit:         2.552 us   |  }
+     hello.1.out-987566 [010] 692184.131872: funcgraph_entry:                   |  handle_mm_fault() {
+     hello.1.out-987566 [010] 692184.131872: funcgraph_entry:      + 10.481 us  |    __handle_mm_fault();
+     hello.1.out-987566 [010] 692184.131883: funcgraph_entry:        0.311 us   |    __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131884: funcgraph_entry:        0.294 us   |    mem_cgroup_from_task();
+     hello.1.out-987566 [010] 692184.131884: funcgraph_entry:        0.398 us   |    __count_memcg_events();
+     hello.1.out-987566 [010] 692184.131885: funcgraph_entry:        0.280 us   |    __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131886: funcgraph_exit:       + 13.562 us  |  }
+     hello.1.out-987566 [010] 692184.131886: funcgraph_entry:        0.272 us   |  __rcu_read_lock();
+     hello.1.out-987566 [010] 692184.131886: funcgraph_entry:        0.308 us   |  up_read();
+     hello.1.out-987566 [010] 692184.131887: funcgraph_entry:        0.283 us   |  __rcu_read_unlock();
+     hello.1.out-987566 [010] 692184.131888: funcgraph_entry:        0.287 us   |  fpregs_assert_state_consistent();
+     hello.1.out-987566 [010] 692184.131889: funcgraph_entry:                   |  syscall_trace_enter() {
+     hello.1.out-987566 [010] 692184.131889: sys_enter_exit_group: error_code: 0x00000000
+     hello.1.out-987566 [010] 692184.131890: funcgraph_exit:         0.909 us   |  }
+     hello.1.out-987566 [010] 692184.131890: funcgraph_entry:                   |  x64_sys_call() {
+     hello.1.out-987566 [010] 692184.131891: funcgraph_entry:                   |    __x64_sys_exit_group() {

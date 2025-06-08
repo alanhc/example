@@ -1,0 +1,71 @@
+cpus=28
+     hello.1.out-985823 [002] 691607.547795: sys_exit_write:       0x1
+     hello.1.out-985823 [002] 691607.547799: sys_enter_execve:     filename: 0x7ffdf53eebc0, argv: 0x7ffdf53f00a0, envp: 0x7ffdf53f00b0
+     hello.1.out-985823 [002] 691607.548400: sys_exit_execve:      0x0
+     hello.1.out-985823 [002] 691607.548447: sys_enter_brk:        brk: 0x00000000
+     hello.1.out-985823 [002] 691607.548448: sys_exit_brk:         0x5e2f6817a000
+     hello.1.out-985823 [002] 691607.548558: sys_enter_mmap:       addr: 0x00000000, len: 0x00002000, prot: 0x00000003, flags: 0x00000022, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-985823 [002] 691607.548564: sys_exit_mmap:        0x7dcf6f034000
+     hello.1.out-985823 [002] 691607.548593: sys_enter_access:     filename: 0x7dcf6f06b5b0, mode: 0x00000004
+     hello.1.out-985823 [002] 691607.548597: sys_exit_access:      0xfffffffffffffffe
+     hello.1.out-985823 [002] 691607.548601: sys_enter_openat:     dfd: 0xffffff9c, filename: 0x7dcf6f06a38f, flags: 0x00080000, mode: 0x00000000
+     hello.1.out-985823 [002] 691607.548606: sys_exit_openat:      0x3
+     hello.1.out-985823 [002] 691607.548607: sys_enter_newfstat:   fd: 0x00000003, statbuf: 0x7ffde2a61150
+     hello.1.out-985823 [002] 691607.548609: sys_exit_newfstat:    0x0
+     hello.1.out-985823 [002] 691607.548610: sys_enter_mmap:       addr: 0x00000000, len: 0x00011d07, prot: 0x00000001, flags: 0x00000002, fd: 0x00000003, off: 0x00000000
+     hello.1.out-985823 [002] 691607.548622: sys_exit_mmap:        0x7dcf6f022000
+     hello.1.out-985823 [002] 691607.548623: sys_enter_close:      fd: 0x00000003
+     hello.1.out-985823 [002] 691607.548624: sys_exit_close:       0x0
+     hello.1.out-985823 [002] 691607.548637: sys_enter_openat:     dfd: 0xffffff9c, filename: 0x7dcf6f034140, flags: 0x00080000, mode: 0x00000000
+     hello.1.out-985823 [002] 691607.548642: sys_exit_openat:      0x3
+     hello.1.out-985823 [002] 691607.548642: sys_enter_read:       fd: 0x00000003, buf: 0x7ffde2a61388, count: 0x00000340
+     hello.1.out-985823 [002] 691607.548645: sys_exit_read:        0x340
+     hello.1.out-985823 [002] 691607.548650: sys_enter_pread64:    fd: 0x00000003, buf: 0x7ffde2a60fa0, count: 0x00000310, pos: 0x00000040
+     hello.1.out-985823 [002] 691607.548652: sys_exit_pread64:     0x310
+     hello.1.out-985823 [002] 691607.548653: sys_enter_newfstat:   fd: 0x00000003, statbuf: 0x7ffde2a61220
+     hello.1.out-985823 [002] 691607.548654: sys_exit_newfstat:    0x0
+     hello.1.out-985823 [002] 691607.548656: sys_enter_pread64:    fd: 0x00000003, buf: 0x7ffde2a60e70, count: 0x00000310, pos: 0x00000040
+     hello.1.out-985823 [002] 691607.548657: sys_exit_pread64:     0x310
+     hello.1.out-985823 [002] 691607.548659: sys_enter_mmap:       addr: 0x00000000, len: 0x00211d90, prot: 0x00000001, flags: 0x00000802, fd: 0x00000003, off: 0x00000000
+     hello.1.out-985823 [002] 691607.548667: sys_exit_mmap:        0x7dcf6ee00000
+     hello.1.out-985823 [002] 691607.548668: sys_enter_mmap:       addr: 0x7dcf6ee28000, len: 0x00188000, prot: 0x00000005, flags: 0x00000812, fd: 0x00000003, off: 0x00028000
+     hello.1.out-985823 [002] 691607.548685: sys_exit_mmap:        0x7dcf6ee28000
+     hello.1.out-985823 [002] 691607.548686: sys_enter_mmap:       addr: 0x7dcf6efb0000, len: 0x0004f000, prot: 0x00000001, flags: 0x00000812, fd: 0x00000003, off: 0x001b0000
+     hello.1.out-985823 [002] 691607.548697: sys_exit_mmap:        0x7dcf6efb0000
+     hello.1.out-985823 [002] 691607.548698: sys_enter_mmap:       addr: 0x7dcf6efff000, len: 0x00006000, prot: 0x00000003, flags: 0x00000812, fd: 0x00000003, off: 0x001fe000
+     hello.1.out-985823 [002] 691607.548710: sys_exit_mmap:        0x7dcf6efff000
+     hello.1.out-985823 [002] 691607.548718: sys_enter_mmap:       addr: 0x7dcf6f005000, len: 0x0000cd90, prot: 0x00000003, flags: 0x00000032, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-985823 [002] 691607.548725: sys_exit_mmap:        0x7dcf6f005000
+     hello.1.out-985823 [002] 691607.548743: sys_enter_close:      fd: 0x00000003
+     hello.1.out-985823 [002] 691607.548744: sys_exit_close:       0x0
+     hello.1.out-985823 [002] 691607.548760: sys_enter_mmap:       addr: 0x00000000, len: 0x00003000, prot: 0x00000003, flags: 0x00000022, fd: 0xffffffff, off: 0x00000000
+     hello.1.out-985823 [002] 691607.548765: sys_exit_mmap:        0x7dcf6f01f000
+     hello.1.out-985823 [002] 691607.548774: sys_enter_arch_prctl: option: 0x00001002, arg2: 0x7dcf6f01f740
+     hello.1.out-985823 [002] 691607.548776: sys_exit_arch_prctl:  0x0
+     hello.1.out-985823 [002] 691607.548777: sys_enter_set_tid_address: tidptr: 0x7dcf6f01fa10
+     hello.1.out-985823 [002] 691607.548778: sys_exit_set_tid_address: 0xf0adf
+     hello.1.out-985823 [002] 691607.548779: sys_enter_set_robust_list: head: 0x7dcf6f01fa20, len: 0x00000018
+     hello.1.out-985823 [002] 691607.548780: sys_exit_set_robust_list: 0x0
+     hello.1.out-985823 [002] 691607.548781: sys_enter_rseq:       rseq: 0x7dcf6f020060, rseq_len: 0x00000020, flags: 0x00000000, sig: 0x53053053
+     hello.1.out-985823 [002] 691607.548782: sys_exit_rseq:        0x0
+     hello.1.out-985823 [002] 691607.548888: sys_enter_mprotect:   start: 0x7dcf6efff000, len: 0x00004000, prot: 0x00000001
+     hello.1.out-985823 [002] 691607.548905: sys_exit_mprotect:    0x0
+     hello.1.out-985823 [002] 691607.548911: sys_enter_mprotect:   start: 0x5e2f47772000, len: 0x00001000, prot: 0x00000001
+     hello.1.out-985823 [002] 691607.548916: sys_exit_mprotect:    0x0
+     hello.1.out-985823 [002] 691607.548925: sys_enter_mprotect:   start: 0x7dcf6f072000, len: 0x00002000, prot: 0x00000001
+     hello.1.out-985823 [002] 691607.548931: sys_exit_mprotect:    0x0
+     hello.1.out-985823 [002] 691607.548957: sys_enter_prlimit64:  pid: 0x00000000, resource: 0x00000003, new_rlim: 0x00000000, old_rlim: 0x7ffde2a61d70
+     hello.1.out-985823 [002] 691607.548959: sys_exit_prlimit64:   0x0
+     hello.1.out-985823 [002] 691607.548977: sys_enter_munmap:     addr: 0x7dcf6f022000, len: 0x00011d07
+     hello.1.out-985823 [002] 691607.548995: sys_exit_munmap:      0x0
+     hello.1.out-985823 [002] 691607.549045: sys_enter_newfstat:   fd: 0x00000001, statbuf: 0x7ffde2a61c80
+     hello.1.out-985823 [002] 691607.549047: sys_exit_newfstat:    0x0
+     hello.1.out-985823 [002] 691607.549054: sys_enter_getrandom:  ubuf: 0x7dcf6f00a178, len: 0x00000008, flags: 0x00000001
+     hello.1.out-985823 [002] 691607.549056: sys_exit_getrandom:   0x8
+     hello.1.out-985823 [002] 691607.549059: sys_enter_brk:        brk: 0x00000000
+     hello.1.out-985823 [002] 691607.549060: sys_exit_brk:         0x5e2f6817a000
+     hello.1.out-985823 [002] 691607.549061: sys_enter_brk:        brk: 0x5e2f6819b000
+     hello.1.out-985823 [002] 691607.549065: sys_exit_brk:         0x5e2f6819b000
+     hello.1.out-985823 [002] 691607.549073: sys_enter_write:      fd: 0x00000001, buf: 0x5e2f6817a2a0, count: 0x0000001c
+     hello.1.out-985823 [002] 691607.549090: sys_exit_write:       0x1c
+     hello.1.out-985823 [002] 691607.549113: sys_enter_exit_group: error_code: 0x00000000

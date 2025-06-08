@@ -1,0 +1,5 @@
+*.out
+*.data*
+perf*
+*out*
+*.svg
