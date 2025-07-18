@@ -1,0 +1,10 @@
+[Unit]
+Description=Hello OpenBMC Meson Demo
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hello
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
